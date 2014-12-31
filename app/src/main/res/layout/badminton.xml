@@ -1,0 +1,111 @@
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    app:parallax_factor="1.9"
+    tools:context=".SubActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/item_background"
+                    android:gravity="center"
+                    android:text="PARALLAXED"
+                    android:textSize="50sp"
+                    tools:ignore="HardcodedText" />
+                    -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/badminton" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="MEN"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Events:Team"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="@string/rules"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:text="→Format of Play : Best of 5(in the order), Singles(Men),Singles(Men), Doubles(Men), Doubles(Men),Singles(Men).\n→Each match(singles/doubles) is best of 3 sets of 21 points.\n→Teams for every game are submitted before the match (specifying who will be playing 1st singles, 2nd singles, 1st doubles, 2nd doubles     and 3rd singles). This team can not be changed after submission.\n→Latest IBF rules will be followed.\n→Teams of maximum 5 players and minimum 4 players.\n→A player can play only two matches (one singles and one doubles).\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="WOMEN"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Events:Team"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="@string/rules"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:text="→Format of Play : Best of 3(in the order), Singles(Women), Doubles(Women), Singles(Women).\n→Each match(singles/doubles) is best of 3 sets of 21 points.\n→Teams for every game are submitted before the match (specifying who will be playing 1st singles, 2nd singles, 1st doubles,2nd doubles     and 3rd singles). This team can not be changed after submission.\n→Latest IBF rules will be followed.\n→Teams of maximum 4 players and minimum 2 players.\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

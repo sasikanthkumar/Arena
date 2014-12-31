@@ -1,0 +1,46 @@
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+
+    android:layout_height="match_parent"
+    app:parallax_factor="1.9"
+    tools:context=".SubActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/item_background"
+                    android:gravity="center"
+                    android:text="PARALLAXED"
+                    android:textSize="50sp"
+                    tools:ignore="HardcodedText" />
+                    -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cricket" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="→Maximum 16 players are allowed in a team.\n→All the matches will be of T20 format with 6 overs of Power-play.\n→The tournament will be knockout or league based on the number of teams.\n→Team has to complete its quota of overs in 1hour 45 minutes (max) unless any special mentions.\n→All teams must report 30 min before the scheduled time. If any or both teams are not ready before the scheduled time, umpires and organisers reserve the right to take appropriate action.\n→If any match is abandoned due to rain then each team will be allotted equal points.\n→If any match is tied, the winner will be decided by “Super Over”.\n→If all the teams have equal points in group stages, the teams qualifying for next stage is decided based on net run rate.\n→All matches will be played in accordance with ICC T20 rules.\n→Rescheduling of matches will not be entertained.\n→The players must wear proper cricketing Uniform and shoes.\n→Decision of Umpires and organizing committee shall be final and binding.\n→Only colleges/ universities are allowed to participate in the tournament.\n•	The tournament will be knockout or league based on the number of teams.\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

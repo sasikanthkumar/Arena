@@ -1,0 +1,134 @@
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    app:parallax_factor="1.9"
+    tools:context=".SubActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/item_background"
+                    android:gravity="center"
+                    android:text="PARALLAXED"
+                    android:textSize="50sp"
+                    tools:ignore="HardcodedText" />
+                    -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/powerlifting" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="MEN ONLY-"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+
+            android:text="The competition shall be conducted under the International Power Lifting Federation Rules as adopted by the Indian Powerlifting Federation, unless otherwise modified. Weight Categories: Under 60Kg, 60-67 Kg, 67-74 Kg, 74-80Kg, Above 80 Kg.( Categories are subject to change depending on the number of contestants ).\n"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+
+            android:text="The competition will comprise of 3 lifts - Bench Press , Squat &amp; Dead Lift performed in the same order.\nEvery lifter will get 3 lift attempts each for bench press, squat &amp; dead lift.\nThe progression after every successful attempt for the same athlete must be a minimum of 1 kilogram.\nWinner will be judged by the sum of heaviest lifts performed successfully for each kind of lift.\n"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="@string/fouls"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="SQUAT"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Failure to bend the knees and lower the body until the top surface of the legs at the hip joint are lower than the top of the knees.\nFailure to assume an upright position with the knees locked at the commencement and completion of the lift. Any downward movement of the bar during the lift.Changing the position of the bar across the shoulders after the commencement of the lift.Any downward movement of the bar on the back more than the diameter/thickness of the bar below the lifter’s chosen starting position.\nStepping backward or forward although lateral movement of the foot and rocking the feet between the ball and heel is permitted.\n"
+
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="BENCH PRESS"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Bar is not lowered to chest i.e. not reaching the chest or is touching the abdominal area.\nAny pronounced or exaggerated uneven extension of the arms during the lift.Any downward movement of the whole of the bar in the course of being pressed out.Failure to press the bar to full extension of the arms at the completion of the lift.\nHeaving, or sinking the bar after it has been motionless on the chest, in such a way as to aid the lifter.\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="DEAD LIFT"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Failure to lock the knees straight at the completion of the lift.Failure to stand erect with the shoulders back.\nAny downward movement of the bar before it reaches the final position. If the bar settles as the shoulders come back this should not be reason to disqualify the lift.Supporting the bar on the thighs during the performance of the lift. If the bar edges up the thighs but is not supported, this is not reason for disqualification.\nLowering the bar before receiving the referee signal.\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

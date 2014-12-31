@@ -1,0 +1,45 @@
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    app:parallax_factor="1.9"
+    tools:context=".SubActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/item_background"
+                    android:gravity="center"
+                    android:text="PARALLAXED"
+                    android:textSize="50sp"
+                    tools:ignore="HardcodedText" />
+                    -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/volleyball" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="→All standard FIVB rules applicable.\n→Maximum players allowed in a team - 12.\n→All standard FIVB rules applicable.\n→&quot;Rotation&quot; rule will be followed during all matches, unless both the teams agree to play &quot;fixed&quot;.\n→The format of the tournament will be decided upon the arrival of teams.\n→All league matches will be best out of 3 sets. Each set will be of 25 points.\n→The schedule of the tournament will be provided to the teams upon their arrival and is subject to change at any point of time, so the teams are requested to check the notice board regularly.\n→In case of any dispute during the match, the decision of the referees will be considered final and binding.\n→Any disciplinary violation by any member of the team will lead to disqualification of that team.\n→All the players will be required to show their ID cards before the beginning of the match failing which the defaulting individual will not be allowed to play.\n→Teams should report to the court half an hour before their match.\n→If a team arrives late by more than 15 minutes, it will be awarded a 2-0 (25-0, 25-0) loss.\n→Teams should bring their own balls for practice. Match balls will be provided for the matches.\n"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

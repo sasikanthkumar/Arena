@@ -1,0 +1,111 @@
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+
+    android:layout_height="match_parent"
+    app:parallax_factor="1.9"
+    tools:context=".SubActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/item_background"
+                    android:gravity="center"
+                    android:text="PARALLAXED"
+                    android:textSize="50sp"
+                    tools:ignore="HardcodedText" />
+                    -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chess" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Events: Classical(mixed), Lightning(mixed)"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="@string/rules"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Limit on number on players :\n→Classical : 5 (4 + 1 reserve)\n→Lightning : 5 (4 + 1 reserve)\n"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="@string/tou_rules_and_info"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="→The board order of players should be given beforehand to the committee. It can not be changed except as per the substitution rule.\n→in case of a 2-2 draw between the playing team in critical rounds, three blitz matches will be played between the best players of the teams. Captains of both the teams will report the name of the best player to the organizer confidentially. In case of further draw, a final Armageddon match will be held.\n→Rule for substitution: “Roll over substitution” The boards lower to the board on which substitution is made would slide you one board till the board of substitution. Example 1: Assume following board order- A-1, B-2, C-3,D-4.Substitute player E. In case, the player A (on board 1) is to be substituted. New board order should be B-1, C-2, D-3, E-4 (Non playing-A). Example 2: Assume following board order- A-1, B-2,C-3,D-4.Substitute player E. In case, the player C (on board 3) is to be substituted. New board order should be A-1, B-2, D-3, E-4 (Non playing-C). Violation of rules of substitution will lead to ‘0-4’ loss to the violating team for that round.\n→Contact the organizers to clear your confusion/dispute. If a player has a disagreement, he/she should stop the clock, contact an arbiter and ask for a solution. The chess clock should be stopped before calling organizer.\n→All participating teams are requested to bring &quot; chess clocks &quot;. The player is required to know how to use a clock.\n→A player may ask about its operation before the clocks are applied.\n→It is expected that players record the moves. (A sheet would be provided.)It may help to resolve some disputes. At the end of game, a signed copy (by both players) of result sheet should be handed over to organizing committee. The moves should be written using standard chess notation.\n→No prompting allowed (Even if violation of any rule is noticed by spectators). Any person found guilty for prompting would be disqualified from the tournament and strict action would be taken against the team to which he/she belongs.\n→A player or his/her team can be disqualified if his/her conduct in the tournament hall is not found satisfactory.\n→After the game is over, both the players should leave the table immediately. However, captains of the playing team can stay inside the playing arena even if his/her match is over.\n→Walkover would be given to the player if his/her opponent does not turn up in 30 minutes (for classical chess) after the round has started. Any player absent from the playing room or board for more than fifteen minutes without permission from the committee may have his or her game forfeited due to unsportsmanlike conduct.\n→Please switch off your mobile or keep it in silence mode. everyone present in the hall is expected to maintain silence. Violating team will likely be subject to a penalty, and may even have to forfeit their game.\n→parents, coaches and managers are not allowed inside the playing arena.\n→Along with the rules mentioned above, all the rules outlined by FIDE for tournaments shall be applicable\nClassical Time Control : 1 hr each\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="@string/lightning_chess_rules"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="→Time of the game will be 5 minutes to each player per game.\n→King can be captured and that results in a loss of game for the player whose king has been captured.\n→Illegal move pointed out by the opponent immediately results in a loss.\n→Players dont need to point out a 'check' to the opponent.\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="RULES AND SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME AND THE FINAL DECISION RESTS WITH THE ARENA ORGANIZING TEAM."
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+
+
+    </LinearLayout>
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

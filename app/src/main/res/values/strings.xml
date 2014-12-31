@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Arena_Test</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">Next</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="loren_ipsum">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique.</string>
+
+    <string-array name="sport_names">
+        <item>Athletics</item>
+        <item>Football</item>
+        <item>Badminton</item>
+        <item>Cricket</item>
+        <item>Hockey</item>
+        <item>Basketball</item>
+        <item>Carrom</item>
+        <item>Chess</item>
+        <item>Lawn Tennis</item>
+        <item>Table Tennis</item>
+        <item>Snooker</item>
+        <item>Kabaddi</item>
+        <item>Power Lifting</item>
+        <item>Volleyball</item>
+        <item>Ultimate Frisbee</item>
+        <item>Duathlon</item>
+    </string-array>
+
+    <string name="rules"><u>Rules</u>:</string>
+    <string name="fouls"><u>FOULS</u>:</string>
+    <string name="group_stage"><u>Group stage</u>:-</string>
+    <string name="tou_rules_and_info"><u>Tournament rules and information</u>:</string>
+    <string name="lightning_chess_rules"><u>Rules specific to lightning chess</u>:</string>
+    <string name="aboutus_arena15">Sports is one of those indispensable little gears that makes this world tick.And even as nerdy engineers, we have not truly experienced life until we hope and despair in the field- or on the bleachers-enraptured in the throes of sporting passion. Whether player or observer , being at the heart of any sport is almost a religious experience, and this year, BITS Pilani Hyderabad Campus brings to you that nirvana of ultimate sporting glory.
+ARENA-2015 - BITS-Pilani Hyderabad  national annual sporting festival, is here, and it believes in the path of Sports Unto Salvation. Michael Phelps believes You  put a limit anything. The more you dream,the farther you get. And this Arena is prepared to do echo just that and push its limit one more step further. This sporting extravaganza of our campus kicked off a mere two years ago, but the growth from Arena to Arena has been exponential.Arena has firmly established itself on the sporting map. With the medals Galore from Sports Meet our sportspersons are gearing up for an encore in this National Sports Meet-This time on their Home Turf. Organisers, too are just as busy , priming our excellent infrastructure for an experience that every participant can swear by. From a footfall of 4500 last year the fracnhised hard work of our departments look to atleast double the number or more, for at BITS-Pilani Hyderabad Campus, even the sky is no limit. So come rediscover the divine ardour of Sports, this Arena.
+Let the Game Begin!!! Sports Unto Salvation</string>
+    <string name="aboutus_arena14">The first edition of Arena took place in April 2013. The success of Intra-Hyderabad Sports fest motivated the sport enthusiasm of the campus to take a step further and start its own Nationwide Sports festival Arena13.
+Arena was launched to bring out the sporting spirit in students from different parts of the country, and to create an opportunity for them to take part in various sporting disciplines, over a period of three days.
+Arena13 saw around 2400 participants from all across the nation participate in many indoor and outdoor sports events, held for both boys and girls.
+The fest offered a comprehensive entertainment and sportive atmosphere, not only competitions but also extravagant entertainment and professional shows like laser show and Jugalbandi</string>
+    <string name="aboutus_director">Birla Institute Of Technology and Science-Pilani, Hyderabad, which houses around 2800 multi-faceted students from diverse regions of the country, aims to equip them with skills essential to make them valuable citizens of tomorrow India.
+
+
+Since its inception in the year 2008, the campus main objective have been to impart high quality education in the field technology, research, science and innovation.The students are inspired encouraged to sharpen their creative and fine-art skills, to keep in tune with the belief of a holistic, educational environment.
+
+
+BITS-Pilani, Hyderabad, has exceptional sports facilities, with well-furnished, capacious grounds and courts.
+
+
+The students show great enthusiasm in sports activities and the college sports teams have won many laurels in different sports festivals, nationwide.</string>
+    <string name="title_activity_fading_ab">FadingAb</string>
+    <string name="title_activity_glass_ab">Glass_ab</string>
+    <string name="title_activity_grid__item_">Grid_Item_Activity</string>
+    <string name="title_activity_grid__item__activity__glass">Grid_Item_Activity_Glass</string>
+    <string name="title_activity_parallax__grid_item">Parallax_GridItem</string>
+    <string name="title_activity_sub_activity2">SubActivity2</string>
+    <string name="title_activity_moving_toolbar">MovingToolbar</string>
+
+</resources>

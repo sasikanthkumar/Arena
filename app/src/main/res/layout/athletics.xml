@@ -1,0 +1,128 @@
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    app:parallax_factor="1.9"
+    tools:context=".SubActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/item_background"
+                    android:gravity="center"
+                    android:text="PARALLAXED"
+                    android:textSize="50sp"
+                    tools:ignore="HardcodedText" />
+                    -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/athletics" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/background_dark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/men"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp"
+                    android:text="MEN"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp"
+                    android:text="TrackEvents:"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <!--     <com.getbase.floatingactionbutton.FloatingActionButton
+                     android:layout_width="match_parent"
+                     android:background="@android:color/white"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/fab_athletics"
+                     android:layout_gravity="right"
+                     android:layout_marginRight="20dp"
+                     fab:fab_title="Register"
+                     fab:fab_colorNormal="@color/primaryColor" /> -->
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="100m, 200m, 400m, 800m, 1500m, 3000m, 5000m, 4*100m Relay, 4*400m Relay"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="@string/rules"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:text="1) Heats will be conducted only for the 100m race, based on which participants will be selected to compete in the final race.\n2) All other races will have no heats.The participants will be timed and the results will be decided accordingly.\n3) Maximum 3 participants from each college in any particular event are allowed (excluding relays,which requires 4 per college team).\n4) An individual can participate in maximum 3 individual events.\n5) An event may stand cancelled in case of insufficient participation.\n6) Decision of the Referee/Event Manager is final in case of any discrepancy. \n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            tools:ignore="HardcodedText" />
+
+
+<!--        <Button
+            android:id="@+id/register_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/buttonshape"
+            android:text="REGISTER"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />   -->
+
+
+    </LinearLayout>
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

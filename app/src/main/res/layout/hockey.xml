@@ -1,0 +1,241 @@
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+
+    android:layout_height="match_parent"
+    app:parallax_factor="1.9"
+    tools:context=".SubActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/item_background"
+                    android:gravity="center"
+                    android:text="PARALLAXED"
+                    android:textSize="50sp"
+                    tools:ignore="HardcodedText" />
+                    -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hockey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Composition of teams"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="2.1 A maximum of eleven players from each team take part in play at any particular time during the match. A maximum of 5 players can be put in for substitution\n"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Each team may play with:"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="– a goalkeeper wearing a different colour shirt and full protective equipment comprising at least headgear, leg guards and kickers ;\n- field players ; no player has goalkeeping privileges. All team players wear the same colour shirt.\n"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Match time"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="A match consists of two periods of 25 minutes and a half-time interval of 5 minutes.\n"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Substitution"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="1.Substitution is permitted at any time except within the period from the award of a penalty corner until after it has been completed ; during this period substitution is only permitted for injury to or suspension of the defending goalkeeper\n2 There is no limit to the number of players who are permitted to be substituted at the same time or to the number of times any player is permitted to substitute or be substituted\n3.	Substitution of a player is permitted only after that player has left the field\n4.	substitutions are not permitted for suspended players during their suspension\n5.	after completing a suspension, a player is permitted to be substituted without first returning to the field\n6.	field players must leave or enter the field for substitution purposes within 3 metres of the centre-line on a side of the field agreed with the umpires\n7.	time is stopped for substitution of goalkeepers (ie wearing full protective equipment) but not for other substitutions.\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Start and re-start the match"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="A coin is tossed:"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="The team which wins the toss has the choice of whichgoal to attack in the first half of the match or to start the match with a centre pass If the team winning the toss chooses which goal to attack in the first half of the match, the opposing team starts the match If the team winning the toss chooses to start the match, the opposing team has the choice of which goal to attack in the first half of the match. Direction of play is reversed in the second half of the match."
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="A centre pass is taken : "
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="To start the match by a player from the team winning the toss if they chose this option ; otherwise by a player from the opposing team To re-start the match after half-time by a player of the team which did not take the centre pass to start the match After a goal by a player of the team against which the goal was scored."
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="Advantage"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="A penalty is awarded only when a player or team has been disadvantaged by an opponent breaking the Rules.\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="A free hit is awarded to the opposing team : "
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="For an offence by any player between the 23 metres areas\nFor an offence by an attacker within the 23 metres area their opponents are defending\nFor an unintentional offence by a defender outside the circle but within the 23 metres area they are defending.\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="A penalty corner is awarded : "
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="For an offence by a defender in the circle which does not prevent the probable scoring of a goal\nFor an intentional offence in the circle by a defender against an opponent who does not have possession of the ball or an opportunity to play the ball\nFor an intentional offence by a defender outside the circle but within the 23 metres area they are defending\nFor intentionally playing the ball over the back-line by a defender\nWhen the ball becomes lodged in a player’s clothing or equipment while in the circle they are defending\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="A penalty stroke is awarded : "
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="For an offence by a defender in the circle which prevents the probable scoring of a goal\nFor an intentional offence in the circle by a defender against an opponent who has possession of the ball or an opportunity to play the ball\nFor defenders persistently crossing over the back-line before permitted during the taking of penalty corners.\n"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>
