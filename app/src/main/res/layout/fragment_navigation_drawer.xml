@@ -5,34 +5,35 @@
     android:background="@android:color/white"
     tools:context="org.arenatest.bits.arena_test.NavigationDrawerFragment">
 
- <!--   <LinearLayout
-        android:id="@+id/containerDrawerImage"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@android:color/black">
+    <!--   <LinearLayout
+           android:id="@+id/containerDrawerImage"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:background="@android:color/black">
 
-        <ImageView
+           <ImageView
 
-            android:layout_width="@dimen/nav_drawer_width"
-            android:layout_height="100dp"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/arena15"
-            android:scaleType="centerCrop"/>
+               android:layout_width="@dimen/nav_drawer_width"
+               android:layout_height="100dp"
+               android:layout_marginBottom="16dp"
+               android:src="@drawable/arena15"
+               android:scaleType="centerCrop"/>
 
-    </LinearLayout>
+       </LinearLayout>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/drawerList"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/drawerList"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
 
-        </android.support.v7.widget.RecyclerView>
--->
+           </android.support.v7.widget.RecyclerView>
+   -->
 
     <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/naviDrawerList"
-        ></ListView>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
 
-    </RelativeLayout>
+</RelativeLayout>
+
+

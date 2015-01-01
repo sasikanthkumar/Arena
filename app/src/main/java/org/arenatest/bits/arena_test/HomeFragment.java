@@ -19,6 +19,8 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
@@ -180,6 +182,10 @@ class MyAdapterHome extends BaseAdapter {
         holderHome.mySportHome.setImageResource(tempHome.imageIdHome);
         holderHome.mySportNameHome.setText(tempHome.sportNameHome);
         holderHome.mySportHome.setTag(tempHome);
+
+        Animation animation= AnimationUtils.loadAnimation(contextHome,R.anim.scale);
+        rowHome.startAnimation(animation);
+
 
 
         return rowHome;

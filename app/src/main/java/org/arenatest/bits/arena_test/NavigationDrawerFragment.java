@@ -114,6 +114,11 @@ public class NavigationDrawerFragment extends Fragment {
                         actionBarTitle = "Contact Us";
                         preFragNum = 4;
                         break;
+                    case 5:
+                        fragment=new SponsersFragment(getActivity());
+                        actionBarTitle="Sponsers/Gallery";
+                        preFragNum = 5;
+                        break;
                 }
                 if (fragment != null && prevFragNum != preFragNum) {
                     prevFragNum = preFragNum;
@@ -297,9 +302,9 @@ class MyAdapterList extends BaseAdapter {
         this.contextListnav = contextListnav;
         listNav = new ArrayList<NavdrawerListItem>();
         Resources resnavList = contextListnav.getResources();
-        String tempIconNames[] = {"Home", "Events", "Maps", "AboutUs", "ContactUs"};
-        int tempIconImages[] = {R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon};
-        for (int i = 0; i < 5; i++) {
+        String tempIconNames[] = {"Home", "Events", "Maps", "AboutUs", "ContactUs","Sponsers/Gallery"};
+        int tempIconImages[] = {R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon,R.drawable.drawericon};
+        for (int i = 0; i < 6; i++) {
             NavdrawerListItem temp = new NavdrawerListItem(tempIconImages[i], tempIconNames[i]);
             listNav.add(temp);
 
