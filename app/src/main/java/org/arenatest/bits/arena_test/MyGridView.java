@@ -26,14 +26,11 @@ public class MyGridView extends GridView {
         int heightSpec;
 
         if (getLayoutParams().height == LayoutParams.WRAP_CONTENT) {
-            // The great Android "hackatlon", the love, the magic.
-            // The two leftmost bits in the height measure spec have
-            // a special meaning, hence we can't use them to describe height.
+
             heightSpec = MeasureSpec.makeMeasureSpec(
                     Integer.MAX_VALUE >>
                             2, MeasureSpec.AT_MOST);
         } else {
-            // Any other height should be respected as is.
             heightSpec = heightMeasureSpec;
         }
 

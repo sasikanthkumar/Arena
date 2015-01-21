@@ -111,7 +111,7 @@ public class ImageGridFragment extends AbsListViewBaseFragment {
     public class ImageAdapter extends BaseAdapter {
         private ImageLoader imageLoader;
         private LayoutInflater inflater;
-        private int[] sportsImages1 = {R.drawable.athletics_two, R.drawable.football_one, R.drawable.badminton_one, R.drawable.cricket_one, R.drawable.hockey_one, R.drawable.basketball, R.drawable.carroms_one, R.drawable.chess_one, R.drawable.tennis_one, R.drawable.tabletennis, R.drawable.snooker_one, R.drawable.kabaddi_one, R.drawable.power_lifting_one, R.drawable.volleyball_o, R.drawable.throw_ball, R.drawable.duathlon_one};
+        private int[] sportsImages1 = {R.drawable.athletics_two, R.drawable.football_one, R.drawable.badminton_one, R.drawable.cricket_one, R.drawable.hockey_one, R.drawable.basketball, R.drawable.carroms_one, R.drawable.chess_one, R.drawable.tennis_one, R.drawable.table_tennis_one, R.drawable.snooker_one, R.drawable.kabaddi_one, R.drawable.power_lifting_one, R.drawable.volleyball_o, R.drawable.throw_ball, R.drawable.duathlon_one};
         public String[] sportsNameList1 = {"Athletics", "Football", "Badminton", "Cricket", "Hockey", "Basketball", "Carrom", "Chess", "LawnTennis", "TableTennis", "Snooker", "Kabaddi", "PowerLifting", "Volleyball", "Throwball", "Duathlon"};
 
         public ImageAdapter() {

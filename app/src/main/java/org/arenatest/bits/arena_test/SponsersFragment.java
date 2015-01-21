@@ -65,35 +65,18 @@ public class SponsersFragment extends android.support.v4.app.Fragment {
 
             for (String name : url_mapsSponsers.keySet()) {
                 textSliderViewSponsers = new TextSliderView(getActivity());
-                // initialize a SliderLayout
                 textSliderViewSponsers
                         .description(name)
                         .image(url_mapsSponsers.get(name))
                         .setScaleType(BaseSliderView.ScaleType.Fit);
 
 
-                //add your extra information
                 textSliderViewSponsers.getBundle()
                         .putString("extraSponsers", name);
 
                 sponsGallery.addSlider(textSliderViewSponsers);
             }
 
-            /*for (String name : url_mapsGallery.keySet()) {
-                TextSliderView textSliderViewGallery = new TextSliderView(getActivity());
-                // initialize a SliderLayout
-                textSliderViewGallery
-                        .description("Gallery")
-                        .image(url_mapsGallery.get(name))
-                        .setScaleType(BaseSliderView.ScaleType.Fit);
-
-
-                //add your extra information
-                textSliderViewGallery.getBundle()
-                        .putString("extraGallery", name);
-
-                sponsGallery.addSlider(textSliderViewGallery);
-            }*/
             sponsGallery.setPresetTransformer(SliderLayout.Transformer.FlipPage);
             sponsGallery.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
             sponsGallery.setDuration(4000);
@@ -117,7 +100,6 @@ public class SponsersFragment extends android.support.v4.app.Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        //tempGrid.setVisibility(View.INVISIBLE);
 
 
     }
@@ -127,7 +109,6 @@ public class SponsersFragment extends android.support.v4.app.Fragment {
         super.onStop();
 
         if (isNetworkAvailable()) {
-            //sponsGallery.removeAllSliders();
             sponsGallery.stopAutoCycle();
         }
         Log.d("bbb", "url");
@@ -138,7 +119,6 @@ public class SponsersFragment extends android.support.v4.app.Fragment {
 
 class ImageAdapter extends BaseAdapter {
     Context context;
-    private ScrollView scrollViewV;
     private int[] imgs;
 
     public ImageAdapter(Context context, int[] imgs) {

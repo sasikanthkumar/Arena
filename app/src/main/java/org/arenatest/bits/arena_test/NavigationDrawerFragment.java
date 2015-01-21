@@ -33,7 +33,6 @@ import java.util.List;
 public class NavigationDrawerFragment extends Fragment {
 
 
-    private RecyclerView recyclerView;
     public String actionBarTitle = "Home";
     public boolean abColor = true;
     public static final String PREF_FILE_NAME = "testpref";
@@ -52,7 +51,6 @@ public class NavigationDrawerFragment extends Fragment {
     private FoldableAboutFragment testRetFrag;
 
     public NavigationDrawerFragment() {
-        // Required empty public constructor
     }
 
     @Override
@@ -69,7 +67,6 @@ public class NavigationDrawerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View layout = inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
         navDrawerList = (ListView) layout.findViewById(R.id.naviDrawerList);
         adapterList = new MyAdapterList(getActivity());
@@ -78,27 +75,19 @@ public class NavigationDrawerFragment extends Fragment {
         navDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                TextView tempText;
-                ImageView tempImg;
                 View tempView;
                 for (int j = 0; j < parent.getChildCount(); j++) {
-                    //tempText = (TextView) parent.getChildAt(j).findViewById(R.id.listText);
                     tempView = parent.getChildAt(j);
                     formatNavDrawerItem(tempView, false);
-                    //tempText.setTextColor(Color.BLACK);
                 }
                 formatNavDrawerItem(view, true);
-                //tempText = (TextView) view.findViewById(R.id.listText);
-                //tempText.setTextColor(Color.BLUE);
 
                 Fragment fragment = null;
                 FragmentManager fragmentManager = getFragmentManager();
                 FoldableAboutFragment fragment1 = null;
 
-                //mDrawerLayout.closeDrawer(containerView);
                 switch (position) {
                     case 0:
-                        //fragment = new HomeFragment();
                         fragment = new ImageGridFragment(getActivity());
                         actionBarTitle = "Home";
                         abColor = true;
@@ -112,14 +101,12 @@ public class NavigationDrawerFragment extends Fragment {
                         break;
                     case 2:
                         fragment1 = new FoldableAboutFragment(getActivity());
-                        fragment = new AboutFragment();
+                        fragment = new LinksFragment(getActivity());
                         actionBarTitle = "About Us";
                         abColor = false;
                         preFragNum = 2;
                         break;
                     case 3:
-                        //fragment1 = new FoldableAboutFragment(getActivity());
-                        //fragment = new ContactUs(getActivity());
                         fragment = new ImageListFragment(getActivity());
                         actionBarTitle = "Contact Us";
                         preFragNum = 3;
@@ -142,20 +129,10 @@ public class NavigationDrawerFragment extends Fragment {
                 }
                 if (fragment != null && prevFragNum != preFragNum) {
                     testRetFrag = fragment1;
-                    //prevFragNum = preFragNum;
-                    //retFragment = fragment;
-                    //mDrawerLayout.closeDrawer(containerView);
-
-                    // android.support.v4.app.FragmentTransaction ft = fragmentManager.beginTransaction();
-                    //ft.setCustomAnimations(R.anim.activity_open_translate, R.anim.zoom_exit);
-                    //Log.d("back", fragmentManager.getBackStackEntryCount() + "");
-                    //ft.replace(R.id.frame_container, fragment);
 
 
-                    //ft.commit();
                     if (actionBarTitle.equals("About Us")) {
                         prevFragNum = preFragNum;
-                        //retFragment = fragment;
                         mDrawerLayout.closeDrawer(containerView);
 
                         fragmentManager = getFragmentManager();
@@ -169,7 +146,6 @@ public class NavigationDrawerFragment extends Fragment {
 
                     } else {
                         prevFragNum = preFragNum;
-                        //retFragment = fragment;
                         mDrawerLayout.closeDrawer(containerView);
 
                         fragmentManager = getFragmentManager();
@@ -194,16 +170,13 @@ public class NavigationDrawerFragment extends Fragment {
         });
 
 
-        //added by me */
         return layout;
     }
 
     private void formatNavDrawerItem(View view, boolean selected) {
         ImageView iconView = (ImageView) view.findViewById(R.id.listIcon);
         TextView titleView = (TextView) view.findViewById(R.id.listText);
-        //if (selected) {
-        //view.setBackgroundResource(R.drawable.selected_navdrawer_item_background);
-        //}
+
         titleView.setTextColor(selected ?
                 getResources().getColor(R.color.navdrawer_text_color_selected) :
                 getResources().getColor(R.color.navdrawer_text_color));
@@ -212,7 +185,7 @@ public class NavigationDrawerFragment extends Fragment {
                 getResources().getColor(R.color.navdrawer_icon_tint));
     }
 
-    public static List<Information> getData() {
+   /* public static List<Information> getData() {
 
         List<Information> data = new ArrayList<>();
         int[] icons = {R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon};
@@ -224,7 +197,7 @@ public class NavigationDrawerFragment extends Fragment {
             data.add(current);
         }
         return data;
-    }
+    }*/
 
 
     public void setUp(int fragment_id, DrawerLayout drawerLayout, final Toolbar toolbar) {
@@ -248,14 +221,12 @@ public class NavigationDrawerFragment extends Fragment {
                 super.onDrawerClosed(drawerView);
                 toolbar.setTitle(actionBarTitle);
                 if (abColor) {
-                    //toolbar.setBackgroundColor(getResources().getColor(R.color.trans));
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         getActivity().getWindow().setStatusBarColor(Color.BLACK);
 
                     }
                 } else {
 
-                    //toolbar.setBackgroundColor(getResources().getColor(R.color.trans));
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         getActivity().getWindow().setStatusBarColor(Color.BLACK);
 
@@ -303,57 +274,6 @@ public class NavigationDrawerFragment extends Fragment {
         return testRetFrag;
     }
 }
-
-/*class MyListAdapter extends BaseAdapter {
-
-    private Context contextList;
-    int[] iconsList = {R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon};
-    String[] titlesList = {"Home", "Events", "Maps", "About", "Contact Us"};
-
-
-    public MyListAdapter(Context contextList) {
-        this.contextList = contextList;
-
-
-    }
-
-    @Override
-    public int getCount() {
-        return titlesList.length;
-    }
-
-    @Override
-    public Object getItem(int position) {
-        return titlesList[position];
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return position;
-    }
-
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        View rowList = null;
-
-        if (convertView == null) {
-            LayoutInflater inflaterList = (LayoutInflater) contextList.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            rowList = inflaterList.inflate(R.layout.custom_row, parent, false);
-
-
-        } else {
-            rowList=convertView;
-
-
-
-        }
-        TextView textViewList= (TextView) rowList.findViewById(R.id.listText);
-        ImageView imageViewList= (ImageView) rowList.findViewById(R.id.listIcon);
-        textViewList.setText(titlesList[position]);
-        imageViewList.setImageResource(iconsList[position]);
-        return null;
-    }
-}*/
 
 class NavdrawerListItem {
     int imageIdnav;

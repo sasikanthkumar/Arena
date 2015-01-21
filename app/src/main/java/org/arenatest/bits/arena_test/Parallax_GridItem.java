@@ -1,25 +1,16 @@
 package org.arenatest.bits.arena_test;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.manuelpeinado.fadingactionbar.extras.actionbarcompat.FadingActionBarHelper;
-
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import java.util.Random;
 
@@ -238,7 +229,7 @@ public class Parallax_GridItem extends ActionBarActivity {
 
                 break;
             case 14:
-                setContentView(R.layout.ultimatefrisbee);
+                setContentView(R.layout.throwball);
                 //ImageView myImage14 = (ImageView) findViewById(R.id.imageView2);
                 //imageLoader1.getInstance().displayImage("drawable://" + R.drawable.throw_ball, myImage14);
 
