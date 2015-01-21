@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="image_ids">
+        <item>@drawable/athletics_one</item>
+        <item>@drawable/football_one</item>
+        <item>@drawable/badminton_one</item>
+        <item>@drawable/cricket_one</item>
+        <item>@drawable/hockey_one</item>
+        <item>@drawable/basketball_one</item>
+        <item>@drawable/carroms_one</item>
+        <item>@drawable/chess_one</item>
+        <item>@drawable/tennis_one</item>
+        <item>@drawable/table_tennis_one</item>
+        <item>@drawable/snooker_one</item>
+        <item>@drawable/kabaddi_one</item>
+        <item>@drawable/power_lifting_one</item>
+        <item>@drawable/volleyball_o</item>
+        <item>@drawable/throw_ball</item>
+        <item>@drawable/duathlon_one</item>
+
+    </string-array>
+
+    <string-array name="image_ids_about">
+        <item>@drawable/arena15</item>
+        <item>@drawable/arena14</item>
+        <item>@drawable/vsrao</item>
+    </string-array>
+
+</resources>

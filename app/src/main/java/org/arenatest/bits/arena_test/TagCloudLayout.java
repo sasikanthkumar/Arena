@@ -3,6 +3,7 @@ package org.arenatest.bits.arena_test;
 import android.content.Context;
 import android.os.Handler;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -54,8 +55,10 @@ public class TagCloudLayout extends ViewGroup {
             lp.x = (int) ((halfWidth + radius * Math.sin(lp.fi + mRotateAngle)
                     * sinTheta) - /* for balancing on x-axis */(child
                     .getMeasuredWidth() / 2F));
-            lp.y = (int) (halfHeight + radius * Math.cos(lp.theta)-/* for balancing on y-axis */(child
+            lp.y = (int) (halfHeight + radius * Math.cos(lp.theta) -/* for balancing on y-axis */(child
                     .getMeasuredHeight() / 2F));
+            //lp.x = 90;
+            //lp.y = 90;
         }
     }
 
@@ -86,8 +89,14 @@ public class TagCloudLayout extends ViewGroup {
         super.addView(child, index, params);
 
         LayoutParams lp = (LayoutParams) child.getLayoutParams();
+        float[] theta = {(float) 1.6755161, (float) 4.1364303, (float) 0.15707964, (float) 1.5009831, (float) 4.468043, (float) 1.1868238, (float) 0.40142572, (float) 0.83775806, (float) 3.0892327, (float) 4.8171086, (float) 2.2165682, (float) 4.118977, (float) 4.0840707, (float) 3.8920841, (float) 5.550147, (float) 1.5009831};
+        float[] fifi = {(float) 0.15707964, (float) 2.3038347, (float) 4.590216, (float) 2.8448868, (float) 3.0717795, (float) 3.7873645, (float) 6.2482786, (float) 2.443461, (float) 2.2514746, (float) 4.537856, (float) 3.5081117, (float) 6.143559, (float) 3.0194197, (float) 5.2708945, (float) 2.7227137, (float) 5.33};
+        //lp.fi = fifi[index];
+        //lp.theta = theta[index];
         lp.fi = (float) Math.toRadians(mRandom.nextInt(360));
+        Log.d("fi", "" + index);
         lp.theta = (float) Math.toRadians(mRandom.nextInt(360));
+        //Log.d("theta", lp.theta + "" + theta[index]);
     }
 
     @Override

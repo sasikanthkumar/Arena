@@ -4,6 +4,12 @@
     android:layout_height="match_parent"
     tools:context="org.arenatest.bits.arena_test.MapsFragment">
 
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/single_grid_item" />
 
 
 </FrameLayout>

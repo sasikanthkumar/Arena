@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="year">Year</string>
+    <string name="location">Location</string>
     <string name="app_name">Arena_Test</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_world">Hello world!</string>
@@ -61,5 +63,6 @@ The students show great enthusiasm in sports activities and the college sports t
     <string name="title_activity_parallax__grid_item">Parallax_GridItem</string>
     <string name="title_activity_sub_activity2">SubActivity2</string>
     <string name="title_activity_moving_toolbar">MovingToolbar</string>
+    <string name="title_activity_folding_test">FoldingTest</string>
 
 </resources>

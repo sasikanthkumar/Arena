@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
     android:orientation="vertical">
 
     <com.balysv.materialripple.MaterialRippleLayout
@@ -25,7 +26,7 @@
                 android:id="@+id/contactImage"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/harsha"
+                android:src="@drawable/ic_drawer_aboutus"
                 app:border_width="2dp" />
 
 
@@ -70,5 +71,6 @@
         android:layout_marginLeft="110dp"
         android:layout_marginRight="10dp"
         android:background="#E6E6E6" />
+
 
 </LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="paintings_titles">
+        <item>Arena 15</item>
+        <item>Previous Arena</item>
+        <item>From the Directors Desk</item>
+
+    </string-array>
+
+    <string-array name="paintings_years">
+        <item>1889</item>
+        <item>1888</item>
+        <item>1888</item>
+
+    </string-array>
+
+    <string-array name="paintings_locations">
+        <item>@string/aboutus_arena15</item>
+        <item>@string/aboutus_arena14</item>
+        <item>@string/aboutus_director</item>
+
+    </string-array>
+
+    <array name="paintings_images">
+        <item>@drawable/arena15</item>
+        <item>@drawable/arena14</item>
+        <item>@drawable/vsrao</item>
+
+    </array>
+
+</resources>

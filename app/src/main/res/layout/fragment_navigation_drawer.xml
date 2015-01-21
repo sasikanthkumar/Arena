@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@android:color/transparent"
+
     tools:context="org.arenatest.bits.arena_test.NavigationDrawerFragment">
 
     <!--   <LinearLayout
@@ -32,7 +33,11 @@
     <ListView
         android:id="@+id/naviDrawerList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
 
 </RelativeLayout>
 

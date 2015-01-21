@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context="org.arenatest.bits.arena_test.ContactUs">
 
-   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:ripple="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:background="@drawable/sports2"
         android:fillViewport="true"
         android:orientation="vertical">
@@ -24,10 +24,10 @@
 
             <com.balysv.materialripple.MaterialRippleLayout
                 android:layout_width="match_parent"
-                app:rippleColor="@color/primaryColorDark"
+                android:layout_height="wrap_content"
                 app:rippleAlpha="1"
 
-                android:layout_height="wrap_content">
+                app:rippleColor="@color/primaryColorDark">
 
 
                 <LinearLayout
@@ -41,7 +41,7 @@
                         android:id="@+id/view"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/harsha"
+                        android:src="@drawable/ic_drawer_aboutus"
                         app:border_width="2dp" />
 
                     <LinearLayout
@@ -88,10 +88,10 @@
 
             <com.balysv.materialripple.MaterialRippleLayout
                 android:layout_width="match_parent"
-                app:rippleColor="@color/primaryColorDark"
+                android:layout_height="wrap_content"
                 app:rippleAlpha="1"
 
-                android:layout_height="wrap_content">
+                app:rippleColor="@color/primaryColorDark">
 
                 <LinearLayout
                     android:id="@+id/battar2"
@@ -104,7 +104,7 @@
                         android:id="@+id/view2"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/battar"
+                        android:src="@drawable/ic_drawer_aboutus"
                         app:border_width="2dp" />
 
                     <LinearLayout
@@ -150,10 +150,10 @@
 
             <com.balysv.materialripple.MaterialRippleLayout
                 android:layout_width="match_parent"
-                app:rippleColor="@color/primaryColorDark"
+                android:layout_height="wrap_content"
                 app:rippleAlpha="1"
 
-                android:layout_height="wrap_content">
+                app:rippleColor="@color/primaryColorDark">
 
 
                 <LinearLayout
@@ -168,7 +168,7 @@
                         android:id="@+id/view3"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/mrudul"
+                        android:src="@drawable/ic_drawer_aboutus"
                         app:border_width="2dp" />
 
                     <LinearLayout
@@ -212,10 +212,10 @@
 
             <com.balysv.materialripple.MaterialRippleLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 app:rippleAlpha="1"
-                app:rippleColor="@color/primaryColorDark"
 
-                android:layout_height="wrap_content">
+                app:rippleColor="@color/primaryColorDark">
 
                 <LinearLayout
                     android:id="@+id/snehith4"
@@ -228,7 +228,7 @@
                         android:id="@+id/view4"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/snehith"
+                        android:src="@drawable/ic_drawer_aboutus"
                         app:border_width="2dp" />
 
                     <LinearLayout
@@ -273,10 +273,10 @@
                 android:background="#E6E6E6" />
 
             <com.balysv.materialripple.MaterialRippleLayout
-                app:rippleColor="@color/primaryColorDark"
-                app:rippleAlpha="1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:rippleAlpha="1"
+                app:rippleColor="@color/primaryColorDark">
 
                 <LinearLayout
                     android:id="@+id/srivani5"
@@ -289,7 +289,7 @@
                         android:id="@+id/view5"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/srivani"
+                        android:src="@drawable/ic_drawer_aboutus"
                         app:border_width="2dp" />
 
                     <LinearLayout
@@ -336,6 +336,5 @@
         </LinearLayout>
 
     </ScrollView>
-
 
 </FrameLayout>

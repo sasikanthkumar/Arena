@@ -53,13 +53,13 @@ public class MovingToolbar extends ActionBarActivity implements NotifyScrollView
 
         }
         mImageView.setImageResource(imageIdToolbar);
-        //test
+        //throw_ball
         LayoutInflater inflater=getLayoutInflater();
         View testView=inflater.inflate(R.layout.athletics_toolbar,null);
         LinearLayout testLinear= (LinearLayout) testView.findViewById(R.id.test123);
        mContentLinearLayout.addView(testLinear);
 
-        //test
+        //throw_ball
         // more setup
         setupNotifyScrollView();
         setupToolbar();

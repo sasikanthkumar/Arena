@@ -1,18 +1,16 @@
 package org.arenatest.bits.arena_test;
 
 
-import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
-import android.graphics.Rect;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -24,7 +22,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +34,8 @@ public class NavigationDrawerFragment extends Fragment {
 
 
     private RecyclerView recyclerView;
-    public String actionBarTitle = "HOME";
+    public String actionBarTitle = "Home";
+    public boolean abColor = true;
     public static final String PREF_FILE_NAME = "testpref";
     public static final String KEY_USER_LEARNED_DRAWER = "user_learned_drawer";
     private ActionBarDrawerToggle mDrawerToogle;
@@ -50,7 +48,8 @@ public class NavigationDrawerFragment extends Fragment {
     public int prevFragNum = 0;
     private int preFragNum;
     private MyAdapterList adapterList;
-
+    private Fragment retFragment;
+    private FoldableAboutFragment testRetFrag;
 
     public NavigationDrawerFragment() {
         // Required empty public constructor
@@ -59,6 +58,7 @@ public class NavigationDrawerFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         mUserLearnedDrawer = Boolean.valueOf(readFromPreferences(getActivity(), KEY_USER_LEARNED_DRAWER, "false"));
         if (savedInstanceState != null) {
             mFromSavedInstanceState = true;
@@ -78,61 +78,115 @@ public class NavigationDrawerFragment extends Fragment {
         navDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                TextView temp;
+                TextView tempText;
+                ImageView tempImg;
+                View tempView;
                 for (int j = 0; j < parent.getChildCount(); j++) {
-                    temp = (TextView) parent.getChildAt(j).findViewById(R.id.listText);
-                    temp.setTextColor(Color.BLACK);
+                    //tempText = (TextView) parent.getChildAt(j).findViewById(R.id.listText);
+                    tempView = parent.getChildAt(j);
+                    formatNavDrawerItem(tempView, false);
+                    //tempText.setTextColor(Color.BLACK);
                 }
-                temp = (TextView) view.findViewById(R.id.listText);
-                temp.setTextColor(Color.BLUE);
-
+                formatNavDrawerItem(view, true);
+                //tempText = (TextView) view.findViewById(R.id.listText);
+                //tempText.setTextColor(Color.BLUE);
 
                 Fragment fragment = null;
+                FragmentManager fragmentManager = getFragmentManager();
+                FoldableAboutFragment fragment1 = null;
+
+                //mDrawerLayout.closeDrawer(containerView);
                 switch (position) {
                     case 0:
-                        fragment = new HomeFragment();
+                        //fragment = new HomeFragment();
+                        fragment = new ImageGridFragment(getActivity());
                         actionBarTitle = "Home";
+                        abColor = true;
                         preFragNum = 0;
                         break;
                     case 1:
-                        fragment = new EventsFragment();
-                        actionBarTitle = "Events";
+                        fragment = new MapsFragment();
+                        actionBarTitle = "Maps";
+                        abColor = false;
                         preFragNum = 1;
                         break;
                     case 2:
-                        fragment = new MapsFragment();
-                        actionBarTitle = "Maps";
+                        fragment1 = new FoldableAboutFragment(getActivity());
+                        fragment = new AboutFragment();
+                        actionBarTitle = "About Us";
+                        abColor = false;
                         preFragNum = 2;
                         break;
                     case 3:
-                        fragment = new AboutFragment();
-                        actionBarTitle = "About Us";
+                        //fragment1 = new FoldableAboutFragment(getActivity());
+                        //fragment = new ContactUs(getActivity());
+                        fragment = new ImageListFragment(getActivity());
+                        actionBarTitle = "Contact Us";
                         preFragNum = 3;
+                        abColor = false;
                         break;
                     case 4:
-                        fragment = new ContactUs();
-                        actionBarTitle = "Contact Us";
+                        fragment = new SponsersFragment(getActivity());
+                        actionBarTitle = "Sponsors";
                         preFragNum = 4;
+                        abColor = false;
                         break;
+
                     case 5:
-                        fragment=new SponsersFragment(getActivity());
-                        actionBarTitle="Sponsers/Gallery";
+                        fragment = new LinksFragment(getActivity());
+                        actionBarTitle = "Links";
                         preFragNum = 5;
+                        abColor = false;
                         break;
+
                 }
                 if (fragment != null && prevFragNum != preFragNum) {
-                    prevFragNum = preFragNum;
-                    FragmentManager fragmentManager = getFragmentManager();
-                    android.support.v4.app.FragmentTransaction ft = fragmentManager.beginTransaction();
-                    ft.setCustomAnimations(R.anim.activity_open_translate, R.anim.activity_close_scale);
-                    ft.replace(R.id.frame_container, fragment);
-                    ft.commit();
-                    mDrawerLayout.closeDrawer(containerView);
+                    testRetFrag = fragment1;
+                    //prevFragNum = preFragNum;
+                    //retFragment = fragment;
+                    //mDrawerLayout.closeDrawer(containerView);
+
+                    // android.support.v4.app.FragmentTransaction ft = fragmentManager.beginTransaction();
+                    //ft.setCustomAnimations(R.anim.activity_open_translate, R.anim.zoom_exit);
+                    //Log.d("back", fragmentManager.getBackStackEntryCount() + "");
+                    //ft.replace(R.id.frame_container, fragment);
+
+
+                    //ft.commit();
+                    if (actionBarTitle.equals("About Us")) {
+                        prevFragNum = preFragNum;
+                        //retFragment = fragment;
+                        mDrawerLayout.closeDrawer(containerView);
+
+                        fragmentManager = getFragmentManager();
+                        android.support.v4.app.FragmentTransaction ft = fragmentManager.beginTransaction();
+                        ft.setCustomAnimations(R.anim.activity_open_translate, R.anim.zoom_exit);
+
+                        ft.replace(R.id.frame_container, fragment1);
+
+
+                        ft.commit();
+
+                    } else {
+                        prevFragNum = preFragNum;
+                        //retFragment = fragment;
+                        mDrawerLayout.closeDrawer(containerView);
+
+                        fragmentManager = getFragmentManager();
+                        android.support.v4.app.FragmentTransaction ft = fragmentManager.beginTransaction();
+                        ft.setCustomAnimations(R.anim.activity_open_translate, R.anim.zoom_exit);
+
+                        ft.replace(R.id.frame_container, fragment);
+
+
+                        ft.commit();
+                    }
 
 
                 } else {
                     Log.e("MainActivity", "Error in creating fragment");
                     mDrawerLayout.closeDrawer(containerView);
+
 
                 }
             }
@@ -144,10 +198,24 @@ public class NavigationDrawerFragment extends Fragment {
         return layout;
     }
 
+    private void formatNavDrawerItem(View view, boolean selected) {
+        ImageView iconView = (ImageView) view.findViewById(R.id.listIcon);
+        TextView titleView = (TextView) view.findViewById(R.id.listText);
+        //if (selected) {
+        //view.setBackgroundResource(R.drawable.selected_navdrawer_item_background);
+        //}
+        titleView.setTextColor(selected ?
+                getResources().getColor(R.color.navdrawer_text_color_selected) :
+                getResources().getColor(R.color.navdrawer_text_color));
+        iconView.setColorFilter(selected ?
+                getResources().getColor(R.color.navdrawer_icon_tint_selected) :
+                getResources().getColor(R.color.navdrawer_icon_tint));
+    }
+
     public static List<Information> getData() {
 
         List<Information> data = new ArrayList<>();
-        int[] icons = {R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon};
+        int[] icons = {R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon};
         String[] titles = {"Home", "Events", "Maps", "About", "Contact Us"};
         for (int i = 0; i < titles.length && i < titles.length; i++) {
             Information current = new Information();
@@ -179,6 +247,20 @@ public class NavigationDrawerFragment extends Fragment {
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
                 toolbar.setTitle(actionBarTitle);
+                if (abColor) {
+                    //toolbar.setBackgroundColor(getResources().getColor(R.color.trans));
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        getActivity().getWindow().setStatusBarColor(Color.BLACK);
+
+                    }
+                } else {
+
+                    //toolbar.setBackgroundColor(getResources().getColor(R.color.trans));
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        getActivity().getWindow().setStatusBarColor(Color.BLACK);
+
+                    }
+                }
                 getActivity().invalidateOptionsMenu();
 
             }
@@ -213,6 +295,13 @@ public class NavigationDrawerFragment extends Fragment {
     }
 
 
+    public int getFragNum() {
+        return preFragNum;
+    }
+
+    public FoldableAboutFragment getFragment() {
+        return testRetFrag;
+    }
 }
 
 /*class MyListAdapter extends BaseAdapter {
@@ -295,15 +384,15 @@ class ViewHoldernavList {
 class MyAdapterList extends BaseAdapter {
     ArrayList<NavdrawerListItem> listNav;
     Context contextListnav;
-    Boolean flag=Boolean.TRUE;
+    Boolean flag = Boolean.TRUE;
 
 
     MyAdapterList(Context contextListnav) {
         this.contextListnav = contextListnav;
         listNav = new ArrayList<NavdrawerListItem>();
         Resources resnavList = contextListnav.getResources();
-        String tempIconNames[] = {"Home", "Events", "Maps", "AboutUs", "ContactUs","Sponsers/Gallery"};
-        int tempIconImages[] = {R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon, R.drawable.drawericon,R.drawable.drawericon};
+        String tempIconNames[] = {"Home", "Maps", "AboutUs", "ContactUs", "Sponsors", "Links"};
+        int tempIconImages[] = {R.drawable.ic_drawer_home, R.drawable.ic_drawer_maps, R.drawable.ic_drawer_aboutus, R.drawable.ic_drawer_contactus, R.drawable.ic_drawer_sponsers, R.drawable.ic_drawer_events};
         for (int i = 0; i < 6; i++) {
             NavdrawerListItem temp = new NavdrawerListItem(tempIconImages[i], tempIconNames[i]);
             listNav.add(temp);
@@ -345,9 +434,16 @@ class MyAdapterList extends BaseAdapter {
         }
         NavdrawerListItem tempItem = listNav.get(i);
         holdernavList.myListNamenav.setText(tempItem.imageNamenav);
-        if (flag==Boolean.TRUE && i==0){
-            holdernavList.myListNamenav.setTextColor(Color.BLUE);
-            flag=Boolean.FALSE;
+
+
+        if (flag == Boolean.TRUE && i == 0) {
+            holdernavList.myListNamenav.setTextColor(contextListnav.getResources().getColor(R.color.navdrawer_text_color_selected));
+            holdernavList.myListnav.setColorFilter(contextListnav.getResources().getColor(R.color.navdrawer_icon_tint_selected));
+            flag = Boolean.FALSE;
+
+        } else {
+            holdernavList.myListNamenav.setTextColor(contextListnav.getResources().getColor(R.color.navdrawer_text_color));
+            holdernavList.myListnav.setColorFilter(contextListnav.getResources().getColor(R.color.navdrawer_icon_tint));
 
         }
 

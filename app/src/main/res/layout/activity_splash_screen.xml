@@ -4,125 +4,227 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash_screen"
-    android:alpha="0.7">
+    android:alpha="0.7"
+    android:background="@drawable/splash_screen">
 
 
-    <org.arenatest.bits.arena_test.TagCloudLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <!--  <org.arenatest.bits.arena_test.TagCloudLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">-->
 
+    <!-- <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
 
+         <TextView
+             android:id="@+id/tv1"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Athletics"
+             android:textColor="@android:color/black" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+         <TextView
+             android:id="@+id/tv2"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/tv1"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Badminton"
+             android:textColor="@android:color/black" />
 
-            android:text="Athletics" />
+         <TextView
+             android:id="@+id/tv3"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentLeft="true"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/tv2"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Basketball"
+             android:textColor="@android:color/black" />
 
-            android:text="Badminton" />
+         <TextView
+             android:id="@+id/tv4"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/tv3"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Carrom"
+             android:textColor="@android:color/black" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+         <TextView
+             android:id="@+id/tv5"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/tv4"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Chess"
+             android:textColor="@android:color/black" />
 
-            android:text="Basketball" />
+         <TextView
+             android:id="@+id/tv6"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/tv5"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Cricket"
+             android:textColor="@android:color/black" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+         <TextView
+             android:id="@+id/tv7"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/tv6"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Duathlon"
+             android:textColor="@android:color/black" />
 
-            android:text="Carrom" />
+         <TextView
+             android:id="@+id/tv8"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/tv7"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Football"
+             android:textColor="@android:color/black" />
+     </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_alignParentRight="true"
+         android:gravity="left"
+         android:orientation="vertical">
 
-            android:text="Chess" />
+         <TextView
+             android:id="@+id/tv9"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Hockey"
+             android:textColor="@android:color/black" />
 
-            android:text="Cricket" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+         <TextView
+             android:id="@+id/tv10"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Kabaddi"
+             android:textColor="@android:color/black" />
 
-            android:text="Duathlon" />
+         <TextView
+             android:id="@+id/tv11"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Lawn Tennis"
+             android:textColor="@android:color/black" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+         <TextView
+             android:id="@+id/tv12"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Power Lifting"
+             android:textColor="@android:color/black" />
 
-            android:text="Football" />
+         <TextView
+             android:id="@+id/tv13"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Snooker"
+             android:textColor="@android:color/black" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+         <TextView
+             android:id="@+id/tv14"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="TableTennis"
+             android:textColor="@android:color/black" />
 
-            android:text="Hockey" />
+         <TextView
+             android:id="@+id/tv15"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Ultimate Frisbee"
+             android:textColor="@android:color/black" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+         <TextView
+             android:id="@+id/tv16"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_gravity="center"
 
-            android:text="Kabaddi" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-
-            android:text="Lawn Tennis" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:textColor="@android:color/black"
-
-            android:layout_height="wrap_content"
-            android:text="Power Lifting" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-
-            android:text="Snooker" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-
-            android:text="TableTennis" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-
-            android:text="Ultimate Frisbee" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:textColor="@android:color/black"
-
-            android:layout_height="wrap_content"
-            android:text="Volleyball" />
-        </org.arenatest.bits.arena_test.TagCloudLayout>
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Volleyball"
+             android:textColor="@android:color/black" />
+     </LinearLayout>-->
+    <!--  </org.arenatest.bits.arena_test.TagCloudLayout>-->
 </RelativeLayout>
