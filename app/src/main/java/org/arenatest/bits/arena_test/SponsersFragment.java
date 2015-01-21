@@ -43,7 +43,7 @@ public class SponsersFragment extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_sponsers, container, false);
-        int imgs1[] = {R.drawable.badminton, R.drawable.volleyball_o, R.drawable.lawntennis, R.drawable.badminton, R.drawable.athletics, R.drawable.mrudul};
+        int imgs1[] = {R.drawable.athletics_final, R.drawable.volleyball_final, R.drawable.tennis_final, R.drawable.badminton_final, R.drawable.athletics_final, R.drawable.badminton_final};
         int imgs2[] = {R.drawable.solid_black};
         gridSponsers = (MyGridView) v.findViewById(R.id.gridSponsers);
         tempGrid = (MyGridView) v.findViewById(R.id.tempGrid);

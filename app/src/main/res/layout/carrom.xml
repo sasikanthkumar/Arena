@@ -1,34 +1,14 @@
-<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
 
-    android:background="@android:color/white"
-    app:parallax_factor="1.9"
-    tools:context=".SubActivity">
 
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:orientation="vertical">
-        <!--
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/item_background"
-                    android:gravity="center"
-                    android:text="PARALLAXED"
-                    android:textSize="50sp"
-                    tools:ignore="HardcodedText" />
-                    -->
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/carroms_one" />
+
 
         <TextView
             android:layout_width="match_parent"
@@ -36,11 +16,15 @@
             android:background="@android:color/white"
             android:padding="5dp"
             android:text="Events:Team"
+            android:textColor="@android:color/black"
+
             android:textAppearance="@android:style/TextAppearance.Large"
             tools:ignore="HardcodedText" />
 
 
         <TextView
+            android:textColor="@android:color/black"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
@@ -54,6 +38,8 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="5dp"
+            android:textColor="@android:color/black"
+
             android:text="@string/rules"
             android:textAppearance="@android:style/TextAppearance.Large"
             tools:ignore="HardcodedText" />
@@ -63,6 +49,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="5dp"
+
             android:text="•	Standard carrom rules apply.\n•	Best of two will be considered out of two singles and one doubles matches played between any two teams.\n•	Each team comprises of 2 or 3 players only.\n• A game shall be of 25 points or eight boards. The player/team who reaches 25 points first or leads at the conclusion of the eighth board shall be the winner of the game.\n• The participants will be made familiar with the rules before the start of the tournament.\n• Any hand may be used in play. Participants can change hand during the game.\n• In case of any conflict, decision made by the captain shall be final and binding. "
 
             android:textAppearance="@android:style/TextAppearance.Medium"
@@ -108,4 +95,3 @@
 
     </LinearLayout>
 
-</com.nirhart.parallaxscroll.views.ParallaxScrollView>

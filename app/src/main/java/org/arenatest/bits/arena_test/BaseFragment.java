@@ -29,9 +29,7 @@ public abstract class BaseFragment extends Fragment {
             case R.id.item_clear_memory_cache:
                 ImageLoader.getInstance().clearMemoryCache();
                 return true;
-            case R.id.item_clear_disc_cache:
-                ImageLoader.getInstance().clearDiskCache();
-                return true;
+
             default:
                 return false;
         }

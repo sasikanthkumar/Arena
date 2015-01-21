@@ -45,11 +45,11 @@ public class ImageGridFragment extends AbsListViewBaseFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setHasOptionsMenu(false);
         options = new DisplayImageOptions.Builder()
-                .showImageOnLoading(R.drawable.ic_drawer_aboutus)
-                .showImageForEmptyUri(R.drawable.ic_drawer_aboutus)
-                .showImageOnFail(R.drawable.ic_drawer_aboutus)
+                .showImageOnLoading(R.drawable.app_logo_final)
+                .showImageForEmptyUri(R.drawable.app_logo_final)
+                .showImageOnFail(R.drawable.app_logo_final)
                 .cacheInMemory(true)
                 .cacheOnDisk(true)
                 .considerExifParams(true)
@@ -68,8 +68,7 @@ public class ImageGridFragment extends AbsListViewBaseFragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 final Intent intentHome = new Intent(view.getContext(), Parallax_GridItem.class);
-                //ImageItem item1 = data1.get(position);
-                //intentHome.putExtra("sportImage", item1.getImage());
+
                 intentHome.putExtra("sportName", sportsNameList12[position]);
                 intentHome.putExtra("Position", position);
 
@@ -111,7 +110,7 @@ public class ImageGridFragment extends AbsListViewBaseFragment {
     public class ImageAdapter extends BaseAdapter {
         private ImageLoader imageLoader;
         private LayoutInflater inflater;
-        private int[] sportsImages1 = {R.drawable.athletics_two, R.drawable.football_one, R.drawable.badminton_one, R.drawable.cricket_one, R.drawable.hockey_one, R.drawable.basketball, R.drawable.carroms_one, R.drawable.chess_one, R.drawable.tennis_one, R.drawable.table_tennis_one, R.drawable.snooker_one, R.drawable.kabaddi_one, R.drawable.power_lifting_one, R.drawable.volleyball_o, R.drawable.throw_ball, R.drawable.duathlon_one};
+        private int[] sportsImages1 = {R.drawable.athletics_final, R.drawable.football_final, R.drawable.badminton_final, R.drawable.cricket_final, R.drawable.hockey_final, R.drawable.basketball_final, R.drawable.carroms_final, R.drawable.chess_final, R.drawable.tennis_final, R.drawable.table_tennis_final, R.drawable.billiards_final, R.drawable.kabaddi_final, R.drawable.powerlifting_final, R.drawable.volleyball_final, R.drawable.throwball_final, R.drawable.duathlon_final};
         public String[] sportsNameList1 = {"Athletics", "Football", "Badminton", "Cricket", "Hockey", "Basketball", "Carrom", "Chess", "LawnTennis", "TableTennis", "Snooker", "Kabaddi", "PowerLifting", "Volleyball", "Throwball", "Duathlon"};
 
         public ImageAdapter() {
@@ -157,7 +156,7 @@ public class ImageGridFragment extends AbsListViewBaseFragment {
                         @Override
                         public void onLoadingStarted(String imageUri, View view) {
                             holder.progressBar.setProgress(0);
-                            holder.progressBar.setVisibility(View.VISIBLE);
+                            holder.progressBar.setVisibility(View.GONE);
                         }
 
                         @Override

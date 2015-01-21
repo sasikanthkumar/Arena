@@ -3,7 +3,7 @@
     android:id="@+id/grid"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_about"
+    android:background="@android:color/white"
     android:gravity="center"
     android:horizontalSpacing="4dip"
     android:numColumns="2"

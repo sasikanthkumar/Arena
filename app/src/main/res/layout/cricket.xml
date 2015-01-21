@@ -1,33 +1,14 @@
-<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
 
-    android:background="@android:color/white"
-    app:parallax_factor="1.9"
-    tools:context=".SubActivity">
 
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
         android:orientation="vertical">
-        <!--
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/item_background"
-                    android:gravity="center"
-                    android:text="PARALLAXED"
-                    android:textSize="50sp"
-                    tools:ignore="HardcodedText" />
-                    -->
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/cricket_one" />
+
 
 
         <TextView
@@ -97,4 +78,3 @@
 
     </LinearLayout>
 
-</com.nirhart.parallaxscroll.views.ParallaxScrollView>

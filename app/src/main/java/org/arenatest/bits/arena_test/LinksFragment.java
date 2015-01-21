@@ -61,7 +61,7 @@ public class LinksFragment extends android.support.v4.app.Fragment {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.bits-arena.com/form.html"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/1teThiUsH2MwwF2AdDMGuhyPXiaHBhXbNBKM7AM0xDfQ/viewform?c=0&w=1"));
                 startActivity(browserIntent);
             }
         });

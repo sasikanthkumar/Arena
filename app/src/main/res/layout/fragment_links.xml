@@ -48,7 +48,7 @@
                         android:layout_gravity="center"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_thumb_up_white_48dp" />
+                        android:src="@drawable/ic_thumb_up_black_24dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -56,7 +56,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="Like Us"
-                        android:textColor="@android:color/white"
+                        android:textColor="@android:color/black"
                         android:textSize="15sp" />
 
                     <ImageButton
@@ -66,7 +66,7 @@
                         android:layout_gravity="center"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_video_collection_white_48dp" />
+                        android:src="@drawable/ic_video_collection_black_24dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -74,7 +74,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="YouTube"
-                        android:textColor="@android:color/white"
+                        android:textColor="@android:color/black"
                         android:textSize="15sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -91,12 +91,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="5dp"
                 android:text="Games and Sports are a part of life. And it is a slice of privilege that NSS (National Service Scheme) chooses to bring to some less fortunate children during Arena.
 
 NSS, BITS-Pilani Hyderabad Campus - in association with Arena 2015 - announces VIHANG, it's very first attempt to engage the students from less privileged background in the surrounding government schools in a set of sporting contests. Vihang shall be held as a pre-Arena event. A myriad of games - from cricket to to sac race to sprints to kho-kho and kabaddi - have been planned for different age groups.
 
 This Arena, we hope to bring a smile to those little faces, by opening for them a word of sporting zeal and glory. We hope you will be with us!"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="14sp" />
 
 

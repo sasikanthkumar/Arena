@@ -1,110 +1,96 @@
-<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@android:color/white"
+    android:orientation="vertical">
 
-    app:parallax_factor="1.9"
-    tools:context=".SubActivity">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@android:color/white"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:text="→All standard FIVB rules applicable.\n→Maximum players allowed in a team - 12.\n→All standard FIVB rules applicable.\n→&quot;Rotation&quot; rule will be followed during all matches, unless both the teams agree to play &quot;fixed&quot;.\n→The format of the tournament will be decided upon the arrival of teams.\n→All league matches will be best out of 3 sets. Each set will be of 25 points.\n→The schedule of the tournament will be provided to the teams upon their arrival and is subject to change at any point of time, so the teams are requested to check the notice board regularly.\n→In case of any dispute during the match, the decision of the referees will be considered final and binding.\n→Any disciplinary violation by any member of the team will lead to disqualification of that team.\n→All the players will be required to show their ID cards before the beginning of the match failing which the defaulting individual will not be allowed to play.\n→Teams should report to the court half an hour before their match.\n→If a team arrives late by more than 15 minutes, it will be awarded a 2-0 (25-0, 25-0) loss.\n→Teams should bring their own balls for practice. Match balls will be provided for the matches.\n"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        tools:ignore="HardcodedText" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/volleyball_o" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#E6E6E6" />
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:text="→All standard FIVB rules applicable.\n→Maximum players allowed in a team - 12.\n→All standard FIVB rules applicable.\n→&quot;Rotation&quot; rule will be followed during all matches, unless both the teams agree to play &quot;fixed&quot;.\n→The format of the tournament will be decided upon the arrival of teams.\n→All league matches will be best out of 3 sets. Each set will be of 25 points.\n→The schedule of the tournament will be provided to the teams upon their arrival and is subject to change at any point of time, so the teams are requested to check the notice board regularly.\n→In case of any dispute during the match, the decision of the referees will be considered final and binding.\n→Any disciplinary violation by any member of the team will lead to disqualification of that team.\n→All the players will be required to show their ID cards before the beginning of the match failing which the defaulting individual will not be allowed to play.\n→Teams should report to the court half an hour before their match.\n→If a team arrives late by more than 15 minutes, it will be awarded a 2-0 (25-0, 25-0) loss.\n→Teams should bring their own balls for practice. Match balls will be provided for the matches.\n"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            tools:ignore="HardcodedText" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:background="#E6E6E6" />
-
-        <TextView
-            android:id="@+id/eventManagers14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Event Managers"
-            android:textAppearance="@android:style/TextAppearance.Large"
-            android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/eventManagers14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Event Managers"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@android:color/black" />
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingTop="10dp"
-            android:text="Swayam Pattnaik"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColor="@android:color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:text="Swayam Pattnaik"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/black" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:autoLink="phone"
-            android:paddingBottom="20dp"
-            android:text="+91-8498085517"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColorLink="@android:color/holo_blue_dark" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:autoLink="phone"
+        android:paddingBottom="20dp"
+        android:text="+91-8498085517"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColorLink="@android:color/holo_blue_dark" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingTop="10dp"
-            android:text="Chaitanya Podilapu"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColor="@android:color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:text="Chaitanya Podilapu"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/black" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:autoLink="phone"
-            android:paddingBottom="20dp"
-            android:text="+91-8096134765"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColorLink="@android:color/holo_blue_dark" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:autoLink="phone"
+        android:paddingBottom="20dp"
+        android:text="+91-8096134765"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColorLink="@android:color/holo_blue_dark" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingTop="10dp"
-            android:text="Sumiran Shubhi"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColor="@android:color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:text="Sumiran Shubhi"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/black" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:autoLink="phone"
-            android:paddingBottom="20dp"
-            android:text="+91-9542874711"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColorLink="@android:color/holo_blue_dark" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:autoLink="phone"
+        android:paddingBottom="20dp"
+        android:text="+91-9542874711"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColorLink="@android:color/holo_blue_dark" />
 
 
-    </LinearLayout>
+</LinearLayout>
 
-</com.nirhart.parallaxscroll.views.ParallaxScrollView>

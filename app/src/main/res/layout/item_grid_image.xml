@@ -11,7 +11,7 @@
         android:adjustViewBounds="true"
         android:contentDescription="descr_image"
         android:scaleType="centerCrop"
-        android:src="@drawable/athletics" />
+        android:src="@drawable/athletics_final" />
 
     <TextView
         android:id="@+id/text"

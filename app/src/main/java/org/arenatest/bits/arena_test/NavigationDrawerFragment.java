@@ -222,13 +222,13 @@ public class NavigationDrawerFragment extends Fragment {
                 toolbar.setTitle(actionBarTitle);
                 if (abColor) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        getActivity().getWindow().setStatusBarColor(Color.BLACK);
+                        //getActivity().getWindow().setStatusBarColor(Color.BLACK);
 
                     }
                 } else {
 
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        getActivity().getWindow().setStatusBarColor(Color.BLACK);
+                        //getActivity().getWindow().setStatusBarColor(Color.BLACK);
 
                     }
                 }

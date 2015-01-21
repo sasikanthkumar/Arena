@@ -1,39 +1,20 @@
-<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
-    android:background="@android:color/white"
-    app:parallax_factor="1.9"
-    tools:context=".SubActivity">
 
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
+        android:background="@android:color/white"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <!--
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/item_background"
-                    android:gravity="center"
-                    android:text="PARALLAXED"
-                    android:textSize="50sp"
-                    tools:ignore="HardcodedText" />
-                    -->
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/table_tennis_one" />
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="5dp"
+            android:textColor="@android:color/black"
             android:text="Team Event – BOYS"
             android:textAppearance="@android:style/TextAppearance.Large"
             tools:ignore="HardcodedText" />
@@ -44,6 +25,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="5dp"
+            android:textColor="@android:color/black"
 
             android:text="→A Minimum of 4 Players and a maximum of 5 players are allowed in a team.\n→Format Of Play:\n    Singles (A vs X)\n    Singles (B vs Y)\n→Doubles\n    Reverse singles (A vs Y)\n    Reverse Singles (B vs X).\n→Every game will be best of 5 sets with each set of 11 playing points.\n→Players playing singles won't be allowed to repeat in doubles.\n"
             android:textAppearance="@android:style/TextAppearance.Medium"
@@ -53,7 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
-            android:padding="5dp"
+            android:padding="5dp"            android:textColor="@android:color/black"
+
             android:text="Team Event – GIRLS"
             android:textAppearance="@android:style/TextAppearance.Large"
             tools:ignore="HardcodedText" />
@@ -64,6 +47,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="5dp"
+            android:textColor="@android:color/black"
 
             android:text="For 2 players per team -\n→A, B and X, Y\n→Best of 3 matches -\n→Singles between A and X\n→Singles between B and Y\n→Doubles: A and B versus X and Y\n→For 3 players per team -\n→A, B, C and X, Y, Z\n→Singles between A and X\n→Singles between B and Y\n→Doubles: A and B versus X and Y\n→Reverse Singles (if winner not decided from the above 3 matches):\n→A versus Y\n→B versus X\n"
             android:textAppearance="@android:style/TextAppearance.Medium"
@@ -126,4 +110,3 @@
 
     </LinearLayout>
 
-</com.nirhart.parallaxscroll.views.ParallaxScrollView>

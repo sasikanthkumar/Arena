@@ -11,12 +11,14 @@
 
     <color name="body_text_1">#de000000</color>
     <color name="navdrawer_background">#ffffffff</color>
-    <color name="navdrawer_text_color">@android:color/white</color>
+    <color name="navdrawer_text_color">@android:color/black</color>
     <color name="navdrawer_text_color_selected">@color/theme_primary</color>
     <color name="theme_primary">#3f51b5</color>
-    <color name="navdrawer_icon_tint">#ff6e6e6e</color>
+    <color name="navdrawer_icon_tint">#ff656565</color>
     <color name="navdrawer_icon_tint_selected">@color/theme_primary</color>
     <color name="trans">#ff020202</color>
+    <color name="primaryColorParallax">#FF9800</color>
+    <color name="primaryColorDarkParallax">#F57C00</color>
 
 
     <string-array name="ActionBarColors">

@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -49,7 +51,7 @@ public class ImageListFragment extends AbsListViewBaseFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         flag = false;
-
+        setHasOptionsMenu(true);
         options = new DisplayImageOptions.Builder()
                 .showImageOnLoading(R.drawable.ic_drawer_aboutus)
                 .showImageForEmptyUri(R.drawable.ic_drawer_aboutus)
@@ -65,7 +67,7 @@ public class ImageListFragment extends AbsListViewBaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fr_image_list, container, false);
         listView = (ListView) rootView.findViewById(android.R.id.list);
-        ((ListView) listView).setAdapter(new ImageAdapter());
+        ((ListView) listView).setAdapter(new ImageAdapterList());
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -138,21 +140,23 @@ public class ImageListFragment extends AbsListViewBaseFragment {
         AnimateFirstDisplayListener.displayedImages.clear();
     }
 
+
+
     private static class ViewHolder {
         TextView text;
         TextView text1;
         ImageView image;
     }
 
-    private class ImageAdapter extends BaseAdapter {
+    private class ImageAdapterList extends BaseAdapter {
 
         private LayoutInflater inflater;
         private ImageLoadingListener animateFirstListener = new AnimateFirstDisplayListener();
-        private int[] imageUrls = {R.drawable.harsha, R.drawable.battar, R.drawable.mrudul, R.drawable.snehith, R.drawable.srivani};
+        private int[] imageUrls = {R.drawable.contact_sportsec_aechuri, R.drawable.contact_regnhosp_battar, R.drawable.contact_spons_mruduli, R.drawable.contact_publicity_budime, R.drawable.contact_sportsec_shrivani};
         private String[] text = {"Harsha Aechuri", "Shashank Battar", "Mrudul Nekkanti", "Snehith Budime", "Shrivani Pandiya"};
         private String[] text1 = {"Sports Secretary,Students Union", "Registration and Hospitatilty", "Sponsorship and Marketing", "Pubilcity and Public Relations", "Sports Secretary, Students Union "};
 
-        public ImageAdapter() {
+        public ImageAdapterList() {
             inflater = LayoutInflater.from(getActivity());
         }
 

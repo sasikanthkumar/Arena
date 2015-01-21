@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import com.alexvasilkov.foldablelayout.UnfoldableView;
 
 
-public class MainActivity extends ActionBarActivity   {
+public class MainActivity extends ActionBarActivity {
     private Toolbar toolbar;
     public NavigationDrawerFragment drawerFragment;
 
@@ -28,10 +28,6 @@ public class MainActivity extends ActionBarActivity   {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle("Home");
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(Color.BLACK);
-
-        }
 
         drawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
@@ -87,9 +83,6 @@ public class MainActivity extends ActionBarActivity   {
 
         return super.onOptionsItemSelected(item);
     }
-
-
-
 
 
 }

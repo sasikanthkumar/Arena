@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="image_ids">
-        <item>@drawable/athletics_one</item>
-        <item>@drawable/football_one</item>
-        <item>@drawable/badminton_one</item>
-        <item>@drawable/cricket_one</item>
-        <item>@drawable/hockey_one</item>
-        <item>@drawable/basketball_one</item>
-        <item>@drawable/carroms_one</item>
-        <item>@drawable/chess_one</item>
-        <item>@drawable/tennis_one</item>
-        <item>@drawable/table_tennis_one</item>
-        <item>@drawable/snooker_one</item>
-        <item>@drawable/kabaddi_one</item>
-        <item>@drawable/power_lifting_one</item>
-        <item>@drawable/volleyball_o</item>
-        <item>@drawable/throw_ball</item>
-        <item>@drawable/duathlon_one</item>
+        <item>@drawable/athletics_final</item>
+        <item>@drawable/football_final</item>
+        <item>@drawable/badminton_final</item>
+        <item>@drawable/cricket_final</item>
+        <item>@drawable/hockey_final</item>
+        <item>@drawable/basketball_final</item>
+        <item>@drawable/carroms_final</item>
+        <item>@drawable/chess_final</item>
+        <item>@drawable/tennis_final</item>
+        <item>@drawable/table_tennis_final</item>
+        <item>@drawable/billiards_final</item>
+        <item>@drawable/kabaddi_final</item>
+        <item>@drawable/powerlifting_final</item>
+        <item>@drawable/volleyball_final</item>
+        <item>@drawable/throwball_final</item>
+        <item>@drawable/duathlon_final</item>
 
     </string-array>
 
