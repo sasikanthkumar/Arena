@@ -6,91 +6,421 @@
     android:background="@android:color/white"
     android:orientation="vertical">
 
-
     <TextView
+        android:id="@+id/rulesVolley"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:background="@android:color/white"
-        android:padding="5dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:text="Rules"
         android:textColor="@android:color/black"
-        android:text="→All standard FIVB rules applicable.\n→Maximum players allowed in a team - 12.\n→All standard FIVB rules applicable.\n→&quot;Rotation&quot; rule will be followed during all matches, unless both the teams agree to play &quot;fixed&quot;.\n→The format of the tournament will be decided upon the arrival of teams.\n→All league matches will be best out of 3 sets. Each set will be of 25 points.\n→The schedule of the tournament will be provided to the teams upon their arrival and is subject to change at any point of time, so the teams are requested to check the notice board regularly.\n→In case of any dispute during the match, the decision of the referees will be considered final and binding.\n→Any disciplinary violation by any member of the team will lead to disqualification of that team.\n→All the players will be required to show their ID cards before the beginning of the match failing which the defaulting individual will not be allowed to play.\n→Teams should report to the court half an hour before their match.\n→If a team arrives late by more than 15 minutes, it will be awarded a 2-0 (25-0, 25-0) loss.\n→Teams should bring their own balls for practice. Match balls will be provided for the matches.\n"
-        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textSize="20sp"
         tools:ignore="HardcodedText" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:background="#E6E6E6" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-    <TextView
-        android:id="@+id/eventManagers14"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/rulesVolley1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="All standard FIVB rules applicable.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesVolley2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText2"
+            android:layout_below="@+id/rulesVolleyText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesVolleyText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Maximum players allowed in a team - 12.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesVolley3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText3"
+            android:layout_below="@+id/rulesVolleyText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesVolleyText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="&quot;Rotation &quot; rule will be followed during all matches, unless both the teams agree to play &quot;fixed &quot;."
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesVolley4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText4"
+            android:layout_below="@+id/rulesVolleyText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesVolleyText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="The format of the tournament will be decided upon the arrival of teams.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesVolley5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText5"
+            android:layout_below="@+id/rulesVolleyText4"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesVolleyText4"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="All league matches will be best out of 3 sets. Each set will be of 25 points.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesVolley6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText6"
+            android:layout_below="@+id/rulesVolleyText5"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesVolleyText5"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="The schedule of the tournament will be provided to the teams upon their arrival and is subject to change at any point of time, so the teams are requested to check the notice board regularly.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesVolley7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText7"
+            android:layout_below="@+id/rulesVolleyText6"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesVolleyText6"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="In case of any dispute during the match, the decision of the referees will be considered final and binding.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesVolley8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText8"
+            android:layout_below="@+id/rulesVolleyText7"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesVolleyText7"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Any disciplinary violation by any member of the team will lead to disqualification of that team.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesVolley9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText9"
+            android:layout_below="@+id/rulesVolleyText8"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesVolleyText8"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="All the players will be required to show their ID cards before the beginning of the match failing which the defaulting individual will not be allowed to play.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesVolley10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText10"
+            android:layout_below="@+id/rulesVolleyText9"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesVolleyText9"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Teams should report to the court half an hour before their match.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesVolley11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText11"
+            android:layout_below="@+id/rulesVolleyText10"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesVolleyText10"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="If a team arrives late by more than 15 minutes, it will be awarded a 2-0 (25-0, 25-0) loss.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesVolley12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesVolleyText12"
+            android:layout_below="@+id/rulesVolleyText11"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesVolleyText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesVolleyText11"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Teams should bring their own balls for practice. Match balls will be provided for the matches.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Event Managers"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        android:textColor="@android:color/black" />
+        android:background="@android:color/holo_orange_dark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventManagers14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
+            android:text="Event Managers"
+
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingTop="10dp"
-        android:text="Swayam Pattnaik"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/swayam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventManagers14"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:autoLink="phone"
-        android:paddingBottom="20dp"
-        android:text="+91-8498085517"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColorLink="@android:color/holo_blue_dark" />
+            android:text="Swayam Pattnaik"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingTop="10dp"
-        android:text="Chaitanya Podilapu"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/swayamPhn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swayam"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-8498085517"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:autoLink="phone"
-        android:paddingBottom="20dp"
-        android:text="+91-8096134765"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColorLink="@android:color/holo_blue_dark" />
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@android:color/white" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingTop="10dp"
-        android:text="Sumiran Shubhi"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/chaitanya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swayamPhn"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:autoLink="phone"
-        android:paddingBottom="20dp"
-        android:text="+91-9542874711"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColorLink="@android:color/holo_blue_dark" />
+            android:text="Chaitanya Podilapu"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
+        <TextView
+            android:id="@+id/chaitanyaPhn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chaitanya"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-8096134765"
+
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@android:color/white" />
+
+        <TextView
+            android:id="@+id/subhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chaitanyaPhn"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
+            android:text="Sumiran Shubhi"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/subhiPhn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subhi"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-9542874711"
+
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@android:color/white" />
+    </LinearLayout>
 
 </LinearLayout>
 

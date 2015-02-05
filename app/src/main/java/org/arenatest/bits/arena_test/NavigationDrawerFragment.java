@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -88,7 +89,7 @@ public class NavigationDrawerFragment extends Fragment {
 
                 switch (position) {
                     case 0:
-                        fragment = new ImageGridFragment(getActivity());
+                        fragment = new ImageGridFragment();
                         actionBarTitle = "Home";
                         abColor = true;
                         preFragNum = 0;
@@ -100,29 +101,42 @@ public class NavigationDrawerFragment extends Fragment {
                         preFragNum = 1;
                         break;
                     case 2:
-                        fragment1 = new FoldableAboutFragment(getActivity());
-                        fragment = new LinksFragment(getActivity());
+                        fragment1 = new FoldableAboutFragment();
+
+                        fragment = new LinksFragment();
                         actionBarTitle = "About Us";
                         abColor = false;
                         preFragNum = 2;
                         break;
                     case 3:
-                        fragment = new ImageListFragment(getActivity());
+                        fragment = new ImageListFragment();
                         actionBarTitle = "Contact Us";
                         preFragNum = 3;
                         abColor = false;
                         break;
                     case 4:
-                        fragment = new SponsersFragment(getActivity());
+                        fragment = new SponsersFragment();
                         actionBarTitle = "Sponsors";
                         preFragNum = 4;
                         abColor = false;
                         break;
 
                     case 5:
-                        fragment = new LinksFragment(getActivity());
+                        fragment = new DiscrollFragment();
                         actionBarTitle = "Links";
                         preFragNum = 5;
+                        abColor = false;
+                        break;
+                    case 6:
+                        fragment = new RegisterFragment();
+                        actionBarTitle = "Register";
+                        preFragNum = 6;
+                        abColor = false;
+                        break;
+                    case 7:
+                        fragment = new UpdatesFragment();
+                        actionBarTitle = "Updates";
+                        preFragNum = 7;
                         abColor = false;
                         break;
 
@@ -160,7 +174,7 @@ public class NavigationDrawerFragment extends Fragment {
 
 
                 } else {
-                    Log.e("MainActivity", "Error in creating fragment");
+                    //Log.e("MainActivity", "Error in creating fragment");
                     mDrawerLayout.closeDrawer(containerView);
 
 
@@ -311,9 +325,9 @@ class MyAdapterList extends BaseAdapter {
         this.contextListnav = contextListnav;
         listNav = new ArrayList<NavdrawerListItem>();
         Resources resnavList = contextListnav.getResources();
-        String tempIconNames[] = {"Home", "Maps", "AboutUs", "ContactUs", "Sponsors", "Links"};
-        int tempIconImages[] = {R.drawable.ic_drawer_home, R.drawable.ic_drawer_maps, R.drawable.ic_drawer_aboutus, R.drawable.ic_drawer_contactus, R.drawable.ic_drawer_sponsers, R.drawable.ic_drawer_events};
-        for (int i = 0; i < 6; i++) {
+        String tempIconNames[] = {"Home", "Maps", "AboutUs", "ContactUs", "Sponsors", "Links", "Register", "Updates"};
+        int tempIconImages[] = {R.drawable.ic_drawer_home, R.drawable.ic_drawer_maps, R.drawable.ic_drawer_aboutus, R.drawable.ic_drawer_contactus, R.drawable.ic_drawer_sponsers, R.drawable.ic_language_black_24dp, R.drawable.ic_account_circle_black_24dp, R.drawable.ic_sync_black_24dp};
+        for (int i = 0; i < 8; i++) {
             NavdrawerListItem temp = new NavdrawerListItem(tempIconImages[i], tempIconNames[i]);
             listNav.add(temp);
 

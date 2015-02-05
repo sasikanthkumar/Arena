@@ -1,6 +1,7 @@
 package org.arenatest.bits.arena_test;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -40,13 +41,15 @@ public class FoldableAboutFragment extends android.support.v4.app.Fragment {
     //private Fragment testRoy;
     String[] titles;
 
+    public FoldableAboutFragment() {
 
-    public FoldableAboutFragment(Context context) {
-        // Required empty public constructor
-        this.context = context;
-        //testRoy = getActivity().getFragmentManager().findFragmentByTag("roy");
     }
 
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        this.context = getActivity();
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -91,55 +94,6 @@ public class FoldableAboutFragment extends android.support.v4.app.Fragment {
 
         });
 
-
-       /* titles = getActivity().getResources().getStringArray(R.array.paintings_titles);
-        final TypedArray imagesTyped = getActivity().getResources().obtainTypedArray(R.array.paintings_images);
-        int size = titles.length;
-        int[] images = new int[size];
-        for (int i = 0; i < size; i++) {
-            images[i] = imagesTyped.getResourceId(i, -1);
-        }
-        List<HashMap<String, String>> aList = new ArrayList<HashMap<String, String>>();
-
-        for (int i = 0; i < size; i++) {
-            HashMap<String, String> hm = new HashMap<String, String>();
-            hm.put("txt", "Country : " + titles[i]);
-
-            hm.put("flag", Integer.toString(images[i]));
-            aList.add(hm);
-        }
-
-        // Keys used in Hashmap
-        String[] from = {"flag", "txt"};
-
-        // Ids of views in listview_layout
-        int[] to = {R.id.list_item_image, R.id.list_item_title};
-        SimpleAdapter simpleAdapter = new SimpleAdapter(getActivity().getBaseContext(), aList, R.layout.list_item, from, to);
-        mListView.setAdapter(simpleAdapter);
-        final int[] imagesSpare = images;
-        final String[] titlesSpare = titles;
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ImageView image = (ImageView) mDetailsLayout.findViewById(R.id.details_image);
-                TextView title = (TextView) mDetailsLayout.findViewById(R.id.details_title);
-                TextView description = (TextView) mDetailsLayout.findViewById(R.id.details_text);
-                Picasso.with(getActivity()).load(imagesSpare[position]).into(image);
-                title.setText(titlesSpare[position]);
-                SpannableBuilder builder = new SpannableBuilder(getActivity());
-                builder
-                        .createStyle().setFont(Typeface.DEFAULT_BOLD).apply()
-                        .append(R.string.year).append(": ")
-                        .clearStyle()
-                        .append(titlesSpare[position]).append("\n")
-                        .createStyle().setFont(Typeface.DEFAULT_BOLD).apply()
-                        .append(R.string.location).append(": ")
-                        .clearStyle()
-                        .append(titlesSpare[position]);
-                description.setText(builder.build());
-                mUnfoldableView.unfold(view, mDetailsLayout);
-            }
-        });   */
 
         PaintingsAdapter pa = new PaintingsAdapter(context, mDetailsLayout, mUnfoldableView);
         mListView.setAdapter(pa);

@@ -1,0 +1,233 @@
+<org.arenatest.bits.arena_test.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.arenatest.bits.arena_test.DiscrollViewContent
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:fontFamily="serif"
+            android:gravity="top|center"
+            android:padding="25dp"
+            android:text="@string/nss"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            tools:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:fontFamily="serif"
+            android:gravity="top|center"
+            android:padding="25dp"
+            android:text="@string/enactus"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            tools:visibility="gone" />
+
+        <org.arenatest.bits.arena_test.DiscrollableFbLikeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3b5998"
+            android:orientation="vertical"
+            tools:visibility="gone">
+
+            <ImageView
+                android:id="@+id/fbLikeView1"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:alpha="0"
+                android:clickable="true"
+                android:src="@drawable/fb_like_button_final"
+                android:translationX="-50dp" />
+
+            <TextView
+                android:id="@+id/fbLikeView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp"
+                android:alpha="0"
+                android:fontFamily="serif"
+                android:text="LikeUs"
+
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:translationX="50dp" />
+        </org.arenatest.bits.arena_test.DiscrollableFbLikeLayout>
+
+        <org.arenatest.bits.arena_test.DiscrollableYouTubeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cd201f"
+            android:orientation="vertical"
+            tools:visibility="gone">
+
+            <ImageView
+                android:id="@+id/youTubeView1"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:alpha="0"
+                android:clickable="true"
+                android:src="@drawable/youtube_button_final"
+                android:translationX="50dp" />
+
+            <TextView
+                android:id="@+id/youTubeView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp"
+                android:alpha="0"
+
+                android:fontFamily="serif"
+                android:text="YouTube"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:translationX="-50dp" />
+        </org.arenatest.bits.arena_test.DiscrollableYouTubeLayout>
+
+        <org.arenatest.bits.arena_test.DiscrollableRedLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@android:color/holo_green_dark"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/redView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:gravity="center"
+
+                android:padding="20dp"
+                android:text="National Annual Cultural Festival"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/redView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:alpha="0.0"
+                android:clickable="true"
+                android:scaleX="0.1"
+                android:scaleY="0.1"
+                android:src="@drawable/pearl_logo_final"
+                android:translationY="50dp" />
+        </org.arenatest.bits.arena_test.DiscrollableRedLayout>
+
+        <org.arenatest.bits.arena_test.DiscrollablePurpleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:orientation="vertical"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/purpleView1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:alpha="0"
+                android:fontFamily="serif"
+                android:gravity="center"
+
+                android:text="National Techno Management Fest"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:translationX="-50dp"
+                android:translationY="-50dp" />
+
+            <ImageView
+                android:id="@+id/purpleView2"
+                android:layout_width="220dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp"
+                android:alpha="0"
+                android:clickable="true"
+                android:src="@drawable/atmos_logo_final"
+                android:translationX="50dp"
+                android:translationY="50dp" />
+        </org.arenatest.bits.arena_test.DiscrollablePurpleLayout>
+
+        <org.arenatest.bits.arena_test.DiscrollableVmLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:orientation="vertical"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/vmView1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:alpha="0"
+                android:fontFamily="serif"
+                android:gravity="center"
+
+                android:text="National Literary Festival"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:translationX="-50dp"
+                android:translationY="-50dp" />
+
+            <ImageView
+                android:id="@+id/vmView2"
+                android:layout_width="220dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp"
+                android:alpha="0"
+                android:clickable="true"
+                android:src="@drawable/vm_logo_final"
+                android:translationX="50dp"
+                android:translationY="50dp" />
+        </org.arenatest.bits.arena_test.DiscrollableVmLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Sports Unto Salvation"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromBottom" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/splash_screen"
+            discrollve:discrollve_scaleX="true"
+            discrollve:discrollve_scaleY="true" />
+    </org.arenatest.bits.arena_test.DiscrollViewContent>
+
+
+</org.arenatest.bits.arena_test.DiscrollView>

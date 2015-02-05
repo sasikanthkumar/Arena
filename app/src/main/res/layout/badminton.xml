@@ -5,149 +5,441 @@
     android:background="@android:color/white"
     android:orientation="vertical">
 
-
-
     <TextView
+        android:id="@+id/rulesForMen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:background="@android:color/white"
-        android:padding="5dp"
-        android:textColor="@android:color/black"
-        android:text="MEN"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="5dp"
-        android:textColor="@android:color/black"
-
-        android:text="Events:Team"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        tools:ignore="HardcodedText" />
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="5dp"
-        android:textColor="@android:color/black"
-
-        android:text="@string/rules"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="5dp"
-        android:text="→Format of Play : Best of 5(in the order), Singles(Men),Singles(Men), Doubles(Men), Doubles(Men),Singles(Men).\n→Each match(singles/doubles) is best of 3 sets of 21 points.\n→Teams for every game are submitted before the match (specifying who will be playing 1st singles, 2nd singles, 1st doubles, 2nd doubles     and 3rd singles). This team can not be changed after submission.\n→Latest IBF rules will be followed.\n→Teams of maximum 5 players and minimum 4 players.\n→A player can play only two matches (one singles and one doubles).\n"
-        android:textAppearance="@android:style/TextAppearance.Small"
-        android:textColor="@android:color/black"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="5dp"
-        android:text="WOMEN"
-        android:textColor="@android:color/black"
-
-        android:textAppearance="@android:style/TextAppearance.Large"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="5dp"
-        android:text="Events:Team"
-        android:textColor="@android:color/black"
-
-        android:textAppearance="@android:style/TextAppearance.Large"
-        tools:ignore="HardcodedText" />
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="5dp"
-        android:text="@string/rules"
-        android:textColor="@android:color/black"
-
-        android:textAppearance="@android:style/TextAppearance.Large"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="5dp"
-        android:text="→Format of Play : Best of 3(in the order), Singles(Women), Doubles(Women), Singles(Women).\n→Each match(singles/doubles) is best of 3 sets of 21 points.\n→Teams for every game are submitted before the match (specifying who will be playing 1st singles, 2nd singles, 1st doubles,2nd doubles     and 3rd singles). This team can not be changed after submission.\n→Latest IBF rules will be followed.\n→Teams of maximum 4 players and minimum 2 players.\n"
-        android:textAppearance="@android:style/TextAppearance.Small"
-        android:textColor="@android:color/black"
-        tools:ignore="HardcodedText" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:background="#fffffffc" />
-
-    <TextView
-        android:id="@+id/eventManagers3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Event Managers"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        android:textColor="@android:color/black" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
         android:paddingTop="10dp"
-        android:text="Balu Sai"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColor="@android:color/black" />
+        android:text="Rules for MEN (Team Event)"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/rulesBad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesBadText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesBadText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Format of Play : Best of 5(in the order), Singles(Men),Singles(Men), Doubles(Men), Doubles(Men),Singles(Men).\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesBad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesBadText2"
+            android:layout_below="@+id/rulesBadText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesBadText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesBadText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Each match(singles/doubles) is best of 3 sets of 21 points.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesBad3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesBadText3"
+            android:layout_below="@+id/rulesBadText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesBadText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesBadText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Teams for every game are submitted before the match (specifying who will be playing 1st singles, 2nd singles, 1st doubles, 2nd doubles and 3rd singles).This team can not be changed after submission.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesBad4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesBadText4"
+            android:layout_below="@+id/rulesBadText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesBadText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesBadText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Latest IBF rules will be followed.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesBad5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesBadText5"
+            android:layout_below="@+id/rulesBadText4"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesBadText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesBadText4"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Teams of maximum 5 players and minimum 4 players.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesBad6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesBadText6"
+            android:layout_below="@+id/rulesBadText5"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesBadText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesBadText5"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="A player can play only two matches (one singles and one doubles).\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:autoLink="phone"
-        android:paddingBottom="20dp"
-        android:text="+91-9010526852"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColorLink="@android:color/holo_blue_dark" />
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/rulesForWomen"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
         android:paddingTop="10dp"
-        android:text="Chandrasekhar K"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColor="@android:color/black" />
+        android:text="Rules for WOMEN (Team Event)"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:autoLink="phone"
-        android:paddingBottom="20dp"
-        android:text="+91-9603246400"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColorLink="@android:color/holo_blue_dark" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
+        <TextView
+            android:id="@+id/rulesBadW1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesBadTextW1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesBadTextW1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Format of Play : Best of 3(in the order), Singles(Women), Doubles(Women), Singles(Women).\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesBadW2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesBadTextW2"
+            android:layout_below="@+id/rulesBadTextW1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesBadTextW2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesBadTextW1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Each match(singles/doubles) is best of 3 sets of 21 points.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesBadW3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesBadTextW3"
+            android:layout_below="@+id/rulesBadTextW2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesBadTextW3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesBadTextW2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Teams for every game are submitted before the match (specifying who will be playing 1st singles, 2nd singles, 1st doubles, 2nd doubles and 3rd singles).This team can not be changed after submission.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/rulesBadW4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesBadTextW4"
+            android:layout_below="@+id/rulesBadTextW3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesBadTextW4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesBadTextW3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Latest IBF rules will be followed.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesBadW5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesBadTextW5"
+            android:layout_below="@+id/rulesBadTextW4"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesBadTextW5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesBadTextW4"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Teams of maximum 4 players and minimum 2 players.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventManagers3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
+            android:text="Event Managers"
+
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/baluSai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventManagers3"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
+            android:text="Balu Sai"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/baluSaiPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/baluSai"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-9010526852"
+
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@android:color/white" />
+
+        <TextView
+            android:id="@+id/kcs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/baluSaiPhone"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
+            android:text="Chandrasekhar K"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/kcsPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kcs"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-9603246400"
+
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@android:color/white" />
+    </LinearLayout>
+    <!--  <View
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:background="#fffffffc" />
+
+      <TextView
+          android:id="@+id/eventManagers3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="Event Managers"
+          android:textAppearance="@android:style/TextAppearance.Large"
+          android:textColor="@android:color/black" />
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:paddingTop="10dp"
+          android:text="Balu Sai"
+          android:textAppearance="@android:style/TextAppearance.Medium"
+          android:textColor="@android:color/black" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:autoLink="phone"
+          android:paddingBottom="20dp"
+          android:text="+91-9010526852"
+          android:textAppearance="@android:style/TextAppearance.Medium"
+          android:textColorLink="@android:color/holo_blue_dark" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:paddingTop="10dp"
+          android:text="Chandrasekhar K"
+          android:textAppearance="@android:style/TextAppearance.Medium"
+          android:textColor="@android:color/black" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:autoLink="phone"
+          android:paddingBottom="20dp"
+          android:text="+91-9603246400"
+          android:textAppearance="@android:style/TextAppearance.Medium"
+          android:textColorLink="@android:color/holo_blue_dark" />-->
 </LinearLayout>
 

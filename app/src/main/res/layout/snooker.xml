@@ -1,24 +1,301 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/rulesSnooker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:text="Rules"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/rulesSnooker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesSnookerText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesSnookerText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Two events shall be conducted viz. singles event and a doubles event.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesSnooker2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesSnookerText2"
+            android:layout_below="@+id/rulesSnookerText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesSnookerText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesSnookerText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Three pool tables are available for conducting all the rounds of both events.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesSnooker3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesSnookerText3"
+            android:layout_below="@+id/rulesSnookerText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesSnookerText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesSnookerText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Jump cues shall not be provided.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesSnooker4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesSnookerText4"
+            android:layout_below="@+id/rulesSnookerText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesSnookerText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesSnookerText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="A maximum of 4 participants from each college are allowed to participate in each event. Not more than one participant from each college shall be allowed to participate in both singles and doubles event.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesSnooker5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesSnookerText5"
+            android:layout_below="@+id/rulesSnookerText4"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesSnookerText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesSnookerText4"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Both events shall have 5 frames in all initial rounds. The semi-finals and finals shall be of 7 frames and 9 frames each.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesSnooker6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesSnookerText6"
+            android:layout_below="@+id/rulesSnookerText5"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesSnookerText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesSnookerText5"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="If at least 6 teams participate in an event, then there shall be group stages followed by elimination, else direct elimination rounds shall be conducted.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesSnooker7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesSnookerText7"
+            android:layout_below="@+id/rulesSnookerText6"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesSnookerText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesSnookerText6"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="The rules of WPBA (World Pool-Billiard Association) shall be followed.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesSnooker8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesSnookerText8"
+            android:layout_below="@+id/rulesSnookerText7"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesSnookerText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesSnookerText7"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="The decision of the organizers, in case of any dispute, shall be final.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
 
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventManagers11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
+            android:text="Event Managers"
+
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
 
 
         <TextView
+            android:id="@+id/moturi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:textColor="@android:color/black"
-            android:padding="5dp"
-            android:text="Coming Soon..."
-            android:textAppearance="@android:style/TextAppearance.Large"
-            tools:ignore="HardcodedText" />
+            android:layout_below="@+id/eventManagers11"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
 
+            android:text="Sri Harsha Moturi"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/moturiPhn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moturi"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-9553941190"
+
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@android:color/white" />
+
+        <TextView
+            android:id="@+id/abhilash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moturiPhn"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
+            android:text="Abhilash Kalapatapu"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/abhilashPhn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abhilash"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-9603411910"
+
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@android:color/white" />
     </LinearLayout>
+
+</LinearLayout>
 

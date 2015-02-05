@@ -27,27 +27,18 @@
             android:background="@android:color/white"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/men"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:fontFamily="sans-serif"
-                android:padding="5dp"
-                android:text="MEN"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                tools:ignore="HardcodedText" />
 
             <TextView
+                android:id="@+id/trackEvents"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:background="@android:color/white"
                 android:fontFamily="sans-serif"
-                android:padding="5dp"
-                android:text="TrackEvents:"
+                android:paddingLeft="14dp"
+                android:paddingTop="10dp"
+                android:text="Track Events"
                 android:textColor="@android:color/black"
-
                 android:textSize="20sp"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
@@ -60,8 +51,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:fontFamily="sans-serif"
-        android:padding="5dp"
+        android:fontFamily="serif"
+        android:paddingLeft="24dp"
+        android:paddingRight="10dp"
         android:text="100m, 200m, 400m, 800m, 1500m, 3000m, 5000m, 4*100m Relay, 4*400m Relay"
         android:textColor="@android:color/black"
 
@@ -70,30 +62,168 @@
         tools:ignore="HardcodedText" />
 
     <TextView
+        android:id="@+id/rulesAthletics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:background="@android:color/white"
         android:fontFamily="sans-serif"
-        android:padding="5dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="13dp"
         android:text="@string/rules"
-
         android:textColor="@android:color/black"
         android:textSize="20sp"
 
         tools:ignore="HardcodedText" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:fontFamily="sans-serif"
-        android:padding="5dp"
-        android:text="1) Heats will be conducted only for the 100m race, based on which participants will be selected to compete in the final race.\n2) All other races will have no heats.The participants will be timed and the results will be decided accordingly.\n3) Maximum 3 participants from each college in any particular event are allowed (excluding relays,which requires 4 per college team).\n4) An individual can participate in maximum 3 individual events.\n5) An event may stand cancelled in case of insufficient participation.\n6) Decision of the Referee/Event Manager is final in case of any discrepancy. \n"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-        tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/rulesAth1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesAthText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesAthText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Heats will be conducted only for the 100m race, based on which participants will be selected to compete in the final race.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesAth2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesAthText2"
+            android:layout_below="@+id/rulesAthText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesAthText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesAthText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="All other races will have no heats.The participants will be timed and the results will be decided accordingly.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesAth3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesAthText3"
+            android:layout_below="@+id/rulesAthText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesAthText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesAthText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Maximum 3 participants from each college in any particular event are allowed (excluding relays,which requires 4 per college team).\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesAth4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesAthText4"
+            android:layout_below="@+id/rulesAthText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesAthText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesAthText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="An individual can participate in maximum 3 individual events.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesAth5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesAthText5"
+            android:layout_below="@+id/rulesAthText4"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesAthText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesAthText4"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="An event may stand cancelled in case of insufficient participation.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesAth6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesAthText6"
+            android:layout_below="@+id/rulesAthText5"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesAthText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesAthText5"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Decision of the Referee/Event Manager is final in case of any discrepancy.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
 
 
+
+    </RelativeLayout>
 </LinearLayout>
 

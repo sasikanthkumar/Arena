@@ -1,23 +1,225 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TextView
+        android:id="@+id/rulesDuathlon"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:background="@android:color/white"
-        android:orientation="vertical">
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="13dp"
+        android:text="@string/rules"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
         <TextView
+            android:id="@+id/rulesDuathlon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesDuathlonText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesDuathlonText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="All the participants are expected to report on time.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesDuathlon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesDuathlonText2"
+            android:layout_below="@+id/rulesDuathlonText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesDuathlonText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesDuathlonText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="It is our policy to put on the best race possible and to give our athletes the best race experience we can.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesDuathlon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesDuathlonText3"
+            android:layout_below="@+id/rulesDuathlonText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesDuathlonText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesDuathlonText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Competitors are responsible for their own safety and the safety of others.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesDuathlon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesDuathlonText4"
+            android:layout_below="@+id/rulesDuathlonText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesDuathlonText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesDuathlonText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="The race consists of 3 parts\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/dummy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:text="COMING SOON.."
-            android:textAppearance="@android:style/TextAppearance.Large"
-            android:textColor="@android:color/black"
-            tools:ignore="HardcodedText" />
+            android:layout_below="@id/rulesDuathlonText4"
+            android:paddingLeft="30dp">
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/EventsDuathlon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/EventsDuathlonText1"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="&#9830;"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/EventsDuathlonText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingLeft="24dp"
+                android:paddingRight="5dp"
+                android:text="Run-3km\n"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/EventsDuathlon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/EventsDuathlonText2"
+                android:layout_below="@+id/EventsDuathlonText1"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="&#9830;"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/EventsDuathlonText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EventsDuathlonText1"
+                android:fontFamily="serif"
+                android:paddingLeft="24dp"
+                android:paddingRight="5dp"
+                android:text="Cycle-6km\n"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/EventsDuathlon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/EventsDuathlonText3"
+                android:layout_below="@+id/EventsDuathlonText2"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="&#9830;"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/EventsDuathlonText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EventsDuathlonText2"
+                android:fontFamily="serif"
+                android:paddingLeft="24dp"
+                android:paddingRight="5dp"
+                android:text="Run-1.2km\n"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rulesDuathlon5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesDuathlonText5"
+            android:layout_below="@+id/dummy"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesDuathlonText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dummy"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="All the general and safety related rules will be announced prior to the race and the decision taken by officials will stand final\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>
 

@@ -19,11 +19,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="#55000000"
+        android:fontFamily="sans-serif"
         android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
         android:paddingTop="10dp"
         android:text="dddd"
         android:textColor="@android:color/white"
-        android:textSize="20sp" />
+        android:textSize="18sp"
+        android:textStyle="normal" />
 
     <ProgressBar
         android:id="@+id/progress"

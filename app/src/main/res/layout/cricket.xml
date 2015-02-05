@@ -1,80 +1,443 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rulesCric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:text="Rules"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/rulesCric1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Maximum 16 players are allowed in a team.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText2"
+            android:layout_below="@+id/rulesCricText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="All the matches will be of T20 format with 6 overs of Power-play.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText3"
+            android:layout_below="@+id/rulesCricText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="The tournament will be knockout or league based on the number of teams.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText4"
+            android:layout_below="@+id/rulesCricText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Team has to complete its quota of overs in 1hour 45 minutes (max) unless any special mentions.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText5"
+            android:layout_below="@+id/rulesCricText4"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText4"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="All teams must report 30 min before the scheduled time. If any or both teams are not ready before the scheduled time, umpires and organisers reserve the right to take appropriate action.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText6"
+            android:layout_below="@+id/rulesCricText5"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText5"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="If any match is abandoned due to rain then each team will be allotted equal points.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText7"
+            android:layout_below="@+id/rulesCricText6"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText6"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="If any match is tied, the winner will be decided by “Super Over”.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText8"
+            android:layout_below="@+id/rulesCricText7"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText7"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="If all the teams have equal points in group stages, the teams qualifying for next stage is decided based on net run rate.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText9"
+            android:layout_below="@+id/rulesCricText8"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText8"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="All matches will be played in accordance with ICC T20 rules.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText10"
+            android:layout_below="@+id/rulesCricText9"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText9"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Rescheduling of matches will not be entertained.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText11"
+            android:layout_below="@+id/rulesCricText10"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText10"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="The players must wear proper cricketing Uniform and shoes.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText12"
+            android:layout_below="@+id/rulesCricText11"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText11"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Decision of Umpires and organizing committee shall be final and binding.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesCric13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesCricText13"
+            android:layout_below="@+id/rulesCricText12"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesCricText13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText12"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Only colleges/ universities are allowed to participate in the tournament.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lastCric"
+            android:layout_below="@+id/rulesCricText13"
+            android:paddingLeft="5dp"
+            android:text="&#8226;"
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/lastCric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesCricText13"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:paddingTop="6dp"
+            android:text="The tournament will be knockout or league based on the number of teams.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
 
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:background="@android:color/holo_orange_dark"
         android:orientation="vertical">
-
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:text="→Maximum 16 players are allowed in a team.\n→All the matches will be of T20 format with 6 overs of Power-play.\n→The tournament will be knockout or league based on the number of teams.\n→Team has to complete its quota of overs in 1hour 45 minutes (max) unless any special mentions.\n→All teams must report 30 min before the scheduled time. If any or both teams are not ready before the scheduled time, umpires and organisers reserve the right to take appropriate action.\n→If any match is abandoned due to rain then each team will be allotted equal points.\n→If any match is tied, the winner will be decided by “Super Over”.\n→If all the teams have equal points in group stages, the teams qualifying for next stage is decided based on net run rate.\n→All matches will be played in accordance with ICC T20 rules.\n→Rescheduling of matches will not be entertained.\n→The players must wear proper cricketing Uniform and shoes.\n→Decision of Umpires and organizing committee shall be final and binding.\n→Only colleges/ universities are allowed to participate in the tournament.\n•	The tournament will be knockout or league based on the number of teams.\n"
-            android:textAppearance="@android:style/TextAppearance.Small"
-            android:textColor="@android:color/black"
-            tools:ignore="HardcodedText" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:background="#E6E6E6" />
 
         <TextView
             android:id="@+id/eventManagers4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
             android:text="Event Managers"
-            android:textAppearance="@android:style/TextAppearance.Large"
-            android:textColor="@android:color/black" />
+
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/kaka"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_below="@+id/eventManagers4"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:paddingTop="10dp"
+
             android:text="Chaitanya Kakarla"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:autoLink="phone"
-            android:paddingBottom="20dp"
-            android:text="+91-9951979639"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColorLink="@android:color/holo_blue_dark" />
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/kakaPhone"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingTop="10dp"
-            android:text="Harsh"
+            android:layout_below="@+id/kaka"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-9951979639"
+
             android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColor="@android:color/black" />
+            android:textColorLink="@android:color/white" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:autoLink="phone"
-            android:paddingBottom="20dp"
-            android:text="+91-9951014855"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColorLink="@android:color/holo_blue_dark" />
+            android:id="@+id/harsh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kakaPhone"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
 
+            android:text="Harsh"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/harshPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/harsh"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-9951014855"
+
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@android:color/white" />
     </LinearLayout>
+</LinearLayout>
 

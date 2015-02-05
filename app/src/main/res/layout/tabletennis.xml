@@ -1,112 +1,583 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tTBoys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="13dp"
+        android:text="Rules- Boys (Team Event)"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/rulestTBoys1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestTBoysText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestTBoysText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="A Minimum of 4 Players and a maximum of 5 players are allowed in a team.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestTBoys2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestTBoysText2"
+            android:layout_below="@+id/rulestTBoysText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestTBoysText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestTBoysText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="FORMAT OF PLAY:\nSingles (A vs X)\nSingles (B vs Y)\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestTBoys3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestTBoysText3"
+            android:layout_below="@+id/rulestTBoysText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestTBoysText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestTBoysText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="DOUBLES\nReverse singles (A vs Y)\nReverse Singles (B vs X).\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestTBoys4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestTBoysText4"
+            android:layout_below="@+id/rulestTBoysText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestTBoysText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestTBoysText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Every game will be best of 5 sets with each set of 11 playing points.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestTBoys5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestTBoysText5"
+            android:layout_below="@+id/rulestTBoysText4"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestTBoysText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestTBoysText4"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Players playing singles won't be allowed to repeat in doubles.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tTGirls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="13dp"
+        android:text="Rules- Girls (Team Event)"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tTGirlsEither"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="13dp"
+        android:text="You can either have 2 players in a team or 3 players.\n"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tTFor2play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="13dp"
+        android:text="For 2 players per team"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/rulestTGirls1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestTGirlsText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestTGirlsText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="There will be best of 3 matches\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestTGirls2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestTGirlsText2"
+            android:layout_below="@+id/rulestTGirlsText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestTGirlsText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestTGirlsText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="A versus X\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestTGirls3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestTGirlsText3"
+            android:layout_below="@+id/rulestTGirlsText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestTGirlsText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestTGirlsText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="B versus Y\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestTGirls4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestTGirlsText4"
+            android:layout_below="@+id/rulestTGirlsText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestTGirlsText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestTGirlsText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="A and B versus X and Y (Doubles match)\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestTGirls5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestTGirlsText5"
+            android:layout_below="@+id/rulestTGirlsText4"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestTGirlsText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestTGirlsText4"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="A and B being players of one team and X and Y being players of the opponent team.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tTFor3play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="13dp"
+        android:text="For 3 players per team"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        tools:ignore="HardcodedText" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/rulestT3Girls1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestT3GirlsText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestT3GirlsText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="A versus X\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestT3Girls2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestT3GirlsText2"
+            android:layout_below="@+id/rulestT3GirlsText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestT3GirlsText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestT3GirlsText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="B versus Y\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestT3Girls3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestT3GirlsText3"
+            android:layout_below="@+id/rulestT3GirlsText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestT3GirlsText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestT3GirlsText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="A and C versus X and Z (Doubles match)\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestT3Girls4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestT3GirlsText4"
+            android:layout_below="@+id/rulestT3GirlsText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestT3GirlsText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestT3GirlsText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Note: The third player has to play the doubles match\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tTFor3playRev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="13dp"
+        android:text="Reverse Singles (if winner not decided from the above 3 matches):"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        tools:ignore="HardcodedText" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/rulestT3GirlsRev1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestT3GirlsTextRev1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestT3GirlsTextRev1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="A versus Y\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulestT3GirlsRev2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulestT3GirlsTextRev2"
+            android:layout_below="@+id/rulestT3GirlsTextRev1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulestT3GirlsTextRev2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulestT3GirlsTextRev1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="B versus X\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:background="@android:color/white"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
         android:orientation="vertical">
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:textColor="@android:color/black"
-            android:text="Team Event – BOYS"
-            android:textAppearance="@android:style/TextAppearance.Large"
-            tools:ignore="HardcodedText" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:textColor="@android:color/black"
-
-            android:text="→A Minimum of 4 Players and a maximum of 5 players are allowed in a team.\n→Format Of Play:\n    Singles (A vs X)\n    Singles (B vs Y)\n→Doubles\n    Reverse singles (A vs Y)\n    Reverse Singles (B vs X).\n→Every game will be best of 5 sets with each set of 11 playing points.\n→Players playing singles won't be allowed to repeat in doubles.\n"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            tools:ignore="HardcodedText" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"            android:textColor="@android:color/black"
-
-            android:text="Team Event – GIRLS"
-            android:textAppearance="@android:style/TextAppearance.Large"
-            tools:ignore="HardcodedText" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:textColor="@android:color/black"
-
-            android:text="For 2 players per team -\n→A, B and X, Y\n→Best of 3 matches -\n→Singles between A and X\n→Singles between B and Y\n→Doubles: A and B versus X and Y\n→For 3 players per team -\n→A, B, C and X, Y, Z\n→Singles between A and X\n→Singles between B and Y\n→Doubles: A and B versus X and Y\n→Reverse Singles (if winner not decided from the above 3 matches):\n→A versus Y\n→B versus X\n"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            tools:ignore="HardcodedText" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:background="#E6E6E6" />
 
         <TextView
             android:id="@+id/eventManagers10"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
             android:text="Event Managers"
-            android:textAppearance="@android:style/TextAppearance.Large"
-            android:textColor="@android:color/black" />
+
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/kansik"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_below="@+id/eventManagers10"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:paddingTop="10dp"
+
             android:text="Kanishk Upreti"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:autoLink="phone"
-            android:paddingBottom="20dp"
-            android:text="+91-7730905235"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColorLink="@android:color/holo_blue_dark" />
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/kansikPhn"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingTop="10dp"
-            android:text="Sriya Ganesh"
+            android:layout_below="@+id/kansik"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-7730905235"
+
             android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColor="@android:color/black" />
+            android:textColorLink="@android:color/white" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:autoLink="phone"
-            android:paddingBottom="20dp"
-            android:text="+91-7661079298"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColorLink="@android:color/holo_blue_dark" />
+            android:id="@+id/shriya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kansikPhn"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
 
+            android:text="Sriya Ganesh"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sriyaPhn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shriya"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-7661079298"
+
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@android:color/white" />
     </LinearLayout>
+</LinearLayout>
 

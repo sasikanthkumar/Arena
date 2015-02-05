@@ -3,9 +3,11 @@ package org.arenatest.bits.arena_test;
 import android.animation.Animator;
 import android.animation.AnimatorInflater;
 import android.animation.ObjectAnimator;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,8 +40,14 @@ public class ImageGridFragment extends AbsListViewBaseFragment {
     Context con;
     DisplayImageOptions options;
 
-    public ImageGridFragment(Context con) {
-        this.con = con;
+    public ImageGridFragment() {
+
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        this.con = getActivity();
     }
 
     @Override
@@ -151,6 +159,9 @@ public class ImageGridFragment extends AbsListViewBaseFragment {
             }
             //ImageLoader.getInstance().displayImage("drawable://" + R.drawable.ic_drawer_aboutus, holder.imageView);
             holder.text.setText(sportsNameList1[position]);
+            Typeface tf = Typeface.createFromAsset(con.getAssets(), "fonts/Oswald-Regular.ttf");
+            holder.text.setTypeface(tf, Typeface.ITALIC);
+
             imageLoader.getInstance()
                     .displayImage("drawable://" + sportsImages1[position], holder.imageView, options, new SimpleImageLoadingListener() {
                         @Override

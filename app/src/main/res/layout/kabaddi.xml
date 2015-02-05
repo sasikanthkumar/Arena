@@ -1,25 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    android:gravity="bottom"
+    android:orientation="vertical">
 
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:background="@android:color/white"
+        android:gravity="center"
+
+        android:padding="5dp"
+        android:text="General rules apply"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:typeface="serif"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="bottom"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventManagers12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
+            android:text="Event Managers"
+
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
 
 
         <TextView
+            android:id="@+id/ranjith"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:textColor="@android:color/black"
-            android:text="Coming Soon.."
-            android:textAppearance="@android:style/TextAppearance.Large"
-            tools:ignore="HardcodedText" />
+            android:layout_below="@+id/eventManagers12"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
 
+            android:text="Ranjith Reddy"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
+        <TextView
+            android:id="@+id/ranjithPhn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rishab"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-9912164131"
+
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@android:color/white" />
     </LinearLayout>
+
+</LinearLayout>
 

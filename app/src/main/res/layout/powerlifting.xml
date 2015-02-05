@@ -1,155 +1,507 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TextView
+        android:id="@+id/rulesPowerLifting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:background="@android:color/white"
-        android:orientation="vertical">
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:text="Rules (Men Only)"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:textColor="@android:color/black"
-            android:text="MEN ONLY-"
-            android:textAppearance="@android:style/TextAppearance.Large"
-            tools:ignore="HardcodedText" />
-
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/rulesPowerLifting1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
+            android:layout_alignTop="@+id/rulesPowerLiftingText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
             android:textColor="@android:color/black"
+            android:textSize="10sp" />
 
+        <TextView
+            android:id="@+id/rulesPowerLiftingText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
             android:text="The competition shall be conducted under the International Power Lifting Federation Rules as adopted by the Indian Powerlifting Federation, unless otherwise modified. Weight Categories: Under 60Kg, 60-67 Kg, 67-74 Kg, 74-80Kg, Above 80 Kg.( Categories are subject to change depending on the number of contestants ).\n"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            tools:ignore="HardcodedText" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
             android:textColor="@android:color/black"
-
-            android:text="The competition will comprise of 3 lifts - Bench Press , Squat &amp; Dead Lift performed in the same order.\nEvery lifter will get 3 lift attempts each for bench press, squat &amp; dead lift.\nThe progression after every successful attempt for the same athlete must be a minimum of 1 kilogram.\nWinner will be judged by the sum of heaviest lifts performed successfully for each kind of lift.\n"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            tools:ignore="HardcodedText" />
-
-
-        <TextView            android:textColor="@android:color/black"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:text="@string/fouls"
-            android:textAppearance="@android:style/TextAppearance.Large"
-            tools:ignore="HardcodedText" />
-
-        <TextView            android:textColor="@android:color/black"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:text="SQUAT"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            tools:ignore="HardcodedText" />
+            android:textSize="18sp" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/rulesPowerLifting2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:text="Failure to bend the knees and lower the body until the top surface of the legs at the hip joint are lower than the top of the knees.\nFailure to assume an upright position with the knees locked at the commencement and completion of the lift. Any downward movement of the bar during the lift.Changing the position of the bar across the shoulders after the commencement of the lift.Any downward movement of the bar on the back more than the diameter/thickness of the bar below the lifter’s chosen starting position.\nStepping backward or forward although lateral movement of the foot and rocking the feet between the ball and heel is permitted.\n"
-
-            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_alignTop="@+id/rulesPowerLiftingText2"
+            android:layout_below="@+id/rulesPowerLiftingText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
             android:textColor="@android:color/black"
-            tools:ignore="HardcodedText" />
-
-        <TextView            android:textColor="@android:color/black"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:text="BENCH PRESS"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            tools:ignore="HardcodedText" />
+            android:textSize="10sp" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/rulesPowerLiftingText2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:text="Bar is not lowered to chest i.e. not reaching the chest or is touching the abdominal area.\nAny pronounced or exaggerated uneven extension of the arms during the lift.Any downward movement of the whole of the bar in the course of being pressed out.Failure to press the bar to full extension of the arms at the completion of the lift.\nHeaving, or sinking the bar after it has been motionless on the chest, in such a way as to aid the lifter.\n"
-            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_below="@+id/rulesPowerLiftingText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="The competition will comprise of 3 lifts - Bench Press , Squat and Dead Lift performed in the same order.\n"
             android:textColor="@android:color/black"
-            tools:ignore="HardcodedText" />
+            android:textSize="18sp" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/rulesPowerLifting3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:text="DEAD LIFT"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            tools:ignore="HardcodedText" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:text="Failure to lock the knees straight at the completion of the lift.Failure to stand erect with the shoulders back.\nAny downward movement of the bar before it reaches the final position. If the bar settles as the shoulders come back this should not be reason to disqualify the lift.Supporting the bar on the thighs during the performance of the lift. If the bar edges up the thighs but is not supported, this is not reason for disqualification.\nLowering the bar before receiving the referee signal.\n"
-            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_alignTop="@+id/rulesPowerLiftingText3"
+            android:layout_below="@+id/rulesPowerLiftingText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
             android:textColor="@android:color/black"
-            tools:ignore="HardcodedText" />
+            android:textSize="10sp" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:background="#E6E6E6" />
+        <TextView
+            android:id="@+id/rulesPowerLiftingText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesPowerLiftingText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Every lifter will get 3 lift attempts each for bench press, squat and dead lift.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesPowerLifting4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesPowerLiftingText4"
+            android:layout_below="@+id/rulesPowerLiftingText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesPowerLiftingText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesPowerLiftingText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="The progression after every successful attempt for the same athlete must be a minimum of 1 kilogram.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesPowerLifting5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesPowerLiftingText5"
+            android:layout_below="@+id/rulesPowerLiftingText4"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesPowerLiftingText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesPowerLiftingText4"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Both events shall have 5 frames in all initial rounds. The semi-finals and finals shall be of 7 frames and 9 frames each.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesPowerLifting6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesPowerLiftingText6"
+            android:layout_below="@+id/rulesPowerLiftingText5"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesPowerLiftingText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesPowerLiftingText5"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Winner will be judged by the sum of heaviest lifts performed successfully for each kind of lift.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/foulsPowerLifting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:text="FOULS"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/squat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:text="Squat"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/squat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/squatText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/squatText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Failure to bend the knees and lower the body until the top surface of the legs at the hip joint are lower than the top of the knees.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/squat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/squatText2"
+            android:layout_below="@+id/squatText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/squatText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/squatText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Failure to assume an upright position with the knees locked at the commencement and completion of the lift. Any downward movement of the bar during the lift.Changing the position of the bar across the shoulders after the commencement of the lift.Any downward movement of the bar on the back more than the diameter/thickness of the bar below the lifter’s chosen starting position.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/squat3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/squatText3"
+            android:layout_below="@+id/squatText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/squatText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/squatText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Stepping backward or forward although lateral movement of the foot and rocking the feet between the ball and heel is permitted.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/benchPress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:text="Bench Press"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/benchPress1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/benchPressText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/benchPressText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Bar is not lowered to chest i.e. not reaching the chest or is touching the abdominal area.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/benchPress2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/benchPressText2"
+            android:layout_below="@+id/benchPressText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/benchPressText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/benchPressText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Any pronounced or exaggerated uneven extension of the arms during the lift.Any downward movement of the whole of the bar in the course of being pressed out.Failure to press the bar to full extension of the arms at the completion of the lift.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/benchPress3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/benchPressText3"
+            android:layout_below="@+id/benchPressText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/benchPressText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/benchPressText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Heaving, or sinking the bar after it has been motionless on the chest, in such a way as to aid the lifter.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/deadLift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:text="Dead Lift"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/deadLift1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/deadLiftText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/deadLiftText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Failure to lock the knees straight at the completion of the lift.Failure to stand erect with the shoulders back.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/deadLift2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/deadLiftText2"
+            android:layout_below="@+id/deadLiftText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/deadLiftText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deadLiftText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Any downward movement of the bar before it reaches the final position. If the bar settles as the shoulders come back this should not be reason to disqualify the lift.Supporting the bar on the thighs during the performance of the lift. If the bar edges up the thighs but is not supported, this is not reason for disqualification.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/deadLift3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/deadLiftText3"
+            android:layout_below="@+id/deadLiftText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/deadLiftText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deadLiftText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Lowering the bar before receiving the referee signal.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/eventManagers13"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Event Managers"
-            android:textAppearance="@android:style/TextAppearance.Large"
-            android:textColor="@android:color/black" />
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
             android:paddingTop="10dp"
-            android:text="SIDDHARTH LENKA"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColor="@android:color/black" />
+
+            android:text="Event Managers"
+
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:id="@+id/lenka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventManagers13"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
+            android:text="Siddharth Lenka"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lenkaPhn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lenka"
             android:autoLink="phone"
-            android:paddingBottom="20dp"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
             android:text="+91-9705633550"
+
             android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColorLink="@android:color/holo_blue_dark" />
-
-
+            android:textColorLink="@android:color/white" />
     </LinearLayout>
+</LinearLayout>
 

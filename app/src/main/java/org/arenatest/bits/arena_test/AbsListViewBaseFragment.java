@@ -1,6 +1,5 @@
 package org.arenatest.bits.arena_test;
 
-import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AbsListView;

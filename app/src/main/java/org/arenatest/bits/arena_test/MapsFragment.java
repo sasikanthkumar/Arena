@@ -56,10 +56,10 @@ public class MapsFragment extends android.support.v4.app.Fragment {
             LatLng latlng2 = new LatLng(17.545203000000001D, 78.571393D);
             LatLng latlng3 = new LatLng(17.544074999999999D, 78.573763999999997D);
             LatLng latlng4 = new LatLng(17.540624999999999D, 78.575293000000002D);
-            map.addMarker((new MarkerOptions()).position(latlng1).title("Uninor LTC"));
-            map.addMarker((new MarkerOptions()).position(latlng2).title("SBH STAGE 1"));
-            map.addMarker((new MarkerOptions()).position(latlng3).title("Imagine Canada STAGE 2"));
-            map.addMarker((new MarkerOptions()).position(latlng4).title("Beam SAC"));
+            map.addMarker((new MarkerOptions()).position(latlng1).title("LTC"));
+            map.addMarker((new MarkerOptions()).position(latlng2).title("STAGE 1"));
+            map.addMarker((new MarkerOptions()).position(latlng3).title("STAGE 2"));
+            map.addMarker((new MarkerOptions()).position(latlng4).title(" SAC"));
             com.google.android.gms.maps.CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLng(latlng);
             com.google.android.gms.maps.CameraUpdate cameraUpdate1 = CameraUpdateFactory.zoomTo(18F);
             map.moveCamera(cameraUpdate);

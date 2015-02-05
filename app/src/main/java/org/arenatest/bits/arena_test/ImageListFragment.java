@@ -1,5 +1,6 @@
 package org.arenatest.bits.arena_test;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -39,12 +40,18 @@ public class ImageListFragment extends AbsListViewBaseFragment {
 
     //String[] imageUrls = Constants.IMAGES;
 
-    DisplayImageOptions options;
+    DisplayImageOptions options2;
     Boolean flag;
     Context con1;
 
-    public ImageListFragment(Context con1) {
-        this.con1 = con1;
+    public ImageListFragment() {
+
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        this.con1 = getActivity();
     }
 
     @Override
@@ -52,10 +59,10 @@ public class ImageListFragment extends AbsListViewBaseFragment {
         super.onCreate(savedInstanceState);
         flag = false;
         setHasOptionsMenu(true);
-        options = new DisplayImageOptions.Builder()
-                .showImageOnLoading(R.drawable.ic_drawer_aboutus)
-                .showImageForEmptyUri(R.drawable.ic_drawer_aboutus)
-                .showImageOnFail(R.drawable.ic_drawer_aboutus)
+        options2 = new DisplayImageOptions.Builder()
+                .showImageOnLoading(R.drawable.app_logo_final)
+                .showImageForEmptyUri(R.drawable.app_logo_final)
+                .showImageOnFail(R.drawable.app_logo_final)
                 .cacheInMemory(true)
                 .cacheOnDisk(true)
                 .considerExifParams(true)
@@ -72,7 +79,7 @@ public class ImageListFragment extends AbsListViewBaseFragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //startImagePagerActivity(position);
-                Log.d("aa", "aaa");
+                //Log.d("aa", "aaa");
                 if (!flag) {
                     flag = true;
                     Dialog dialog = new Dialog(con1);
@@ -104,26 +111,27 @@ public class ImageListFragment extends AbsListViewBaseFragment {
                             dialog.show();
                             break;
                         case 1:
+                            phoneText.setText("+91-9912702673");
+                            emailText.setText("shrivani@bits-arena.com");
+                            dialog.show();
+                            break;
+                        case 2:
                             phoneText.setText("+91-8464992947");
                             emailText.setText("shashank@bits-arena.com");
                             emailText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
                             dialog.show();
                             break;
-                        case 2:
+                        case 3:
                             phoneText.setText("+91-9542553851");
                             emailText.setText("mrudul@bits-arena.com");
                             dialog.show();
                             break;
-                        case 3:
+                        case 4:
                             phoneText.setText("+91-9618102392");
                             emailText.setText("snehith@bits-arena.com");
                             dialog.show();
                             break;
-                        case 4:
-                            phoneText.setText("+91-9912702673");
-                            emailText.setText("shrivani@bits-arena.com");
-                            dialog.show();
-                            break;
+
 
                     }
 
@@ -141,7 +149,6 @@ public class ImageListFragment extends AbsListViewBaseFragment {
     }
 
 
-
     private static class ViewHolder {
         TextView text;
         TextView text1;
@@ -152,9 +159,9 @@ public class ImageListFragment extends AbsListViewBaseFragment {
 
         private LayoutInflater inflater;
         private ImageLoadingListener animateFirstListener = new AnimateFirstDisplayListener();
-        private int[] imageUrls = {R.drawable.contact_sportsec_aechuri, R.drawable.contact_regnhosp_battar, R.drawable.contact_spons_mruduli, R.drawable.contact_publicity_budime, R.drawable.contact_sportsec_shrivani};
-        private String[] text = {"Harsha Aechuri", "Shashank Battar", "Mrudul Nekkanti", "Snehith Budime", "Shrivani Pandiya"};
-        private String[] text1 = {"Sports Secretary,Students Union", "Registration and Hospitatilty", "Sponsorship and Marketing", "Pubilcity and Public Relations", "Sports Secretary, Students Union "};
+        private int[] imageUrls = {R.drawable.harsha_final, R.drawable.srivani_final, R.drawable.battar_final, R.drawable.mrudul_final, R.drawable.budime_final};
+        private String[] text = {"Harsha Aechuri", "Shrivani Pandiya", "Shashank Battar", "Mrudul Nekkanti", "Snehith Budime"};
+        private String[] text1 = {"Sports Secretary,Students Union", "Sports Secretary, Students Union ", "Registration and Hospitatilty", "Sponsorship and Marketing", "Pubilcity and Public Relations"};
 
         public ImageAdapterList() {
             inflater = LayoutInflater.from(getActivity());
@@ -192,7 +199,7 @@ public class ImageListFragment extends AbsListViewBaseFragment {
 
             holder.text.setText(text[position]);
             holder.text1.setText(text1[position]);
-            ImageLoader.getInstance().displayImage("drawable://" + imageUrls[position], holder.image, options, animateFirstListener);
+            ImageLoader.getInstance().displayImage("drawable://" + imageUrls[position], holder.image, options2, animateFirstListener);
 
             return view;
         }

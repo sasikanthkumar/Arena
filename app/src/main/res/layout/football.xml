@@ -6,76 +6,281 @@
     android:background="@android:color/white"
     android:orientation="vertical">
 
-
     <TextView
+        android:id="@+id/rulesFootball"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:background="@android:color/white"
-        android:padding="5dp"
-        android:text="→Squads of not more than 18\n→Matches will be 11v11 and played with FIFA rules. \n→Referee's decision shall be final.\n→Only three substitutes allowed every match.\n→Matches will be of 20mins each half with a five min break."
-        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="13dp"
+        android:text="@string/rules"
         android:textColor="@android:color/black"
+        android:textSize="20sp"
+
         tools:ignore="HardcodedText" />
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-    <TextView
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/rulesFoot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesFootText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesFootText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Squads of not more than 18.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesFoot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesFootText2"
+            android:layout_below="@+id/rulesFootText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesFootText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesFootText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Matches will be 11v11 and played with FIFA rules.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesFoot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesFootText3"
+            android:layout_below="@+id/rulesFootText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesFootText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesFootText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Referee's decision shall be final.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesFoot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesFootText4"
+            android:layout_below="@+id/rulesFootText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesFootText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesFootText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Only three substitutes allowed every match.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesFoot5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesFootText5"
+            android:layout_below="@+id/rulesFootText4"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesFootText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesFootText4"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Matches will be of 20mins each half with a five min break.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/groupStage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesFootText5"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/white"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="14dp"
+            android:text="Group stage"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/groupStageText1"
+            android:layout_below="@+id/groupStage"
+            android:paddingLeft="5dp"
+            android:text="&#8226;"
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/groupStageText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupStage"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:paddingTop="6dp"
+            android:text="3 points for a win.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/groupStageText2"
+            android:layout_below="@+id/groupStageText1"
+            android:paddingLeft="5dp"
+            android:text="&#8226;"
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/groupStageText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupStageText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:paddingTop="6dp"
+            android:text="1 point each for a draw.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/groupStageText3"
+            android:layout_below="@+id/groupStageText2"
+            android:paddingLeft="5dp"
+            android:text="&#8226;"
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/groupStageText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupStageText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:paddingTop="6dp"
+            android:text="In case of a tie in a knock out match, penalties will decide the winner.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="5dp"
-        android:text="@string/group_stage"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        tools:ignore="HardcodedText"        android:textColor="@android:color/black"
-        />
+        android:background="@android:color/holo_orange_dark"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="5dp"
-        android:textColor="@android:color/black"
+        <TextView
+            android:id="@+id/eventManagers2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
 
-        android:text="3 points for a win.\n1 point each for a draw.\nIn case of a tie in a knock out match, penalties will decide the winner."
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        tools:ignore="HardcodedText" />
+            android:text="Event Managers"
 
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:background="#E6E6E6" />
-
-    <TextView
-        android:id="@+id/eventManagers2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Event Managers"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        android:textColor="@android:color/black" />
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingTop="10dp"
-        android:text="Shantanu Bhardwaj"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/shubhamBharadwaj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventManagers2"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:autoLink="phone"
-        android:paddingBottom="20dp"
-        android:text="+91-9912608166"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColorLink="@android:color/holo_blue_dark" />
+            android:text="Shantanu Bhardwaj"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
+        <TextView
+            android:id="@+id/shubhamBharadwajPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shubhamBharadwaj"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="+91-9912608166"
+
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@android:color/white" />
+    </LinearLayout>
 
 </LinearLayout>
 

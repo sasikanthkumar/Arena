@@ -1,6 +1,7 @@
 package org.arenatest.bits.arena_test;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -34,16 +35,21 @@ public class SponsersFragment extends android.support.v4.app.Fragment {
     private HashMap<String, String> url_mapsSponsers;
     private TextSliderView textSliderViewSponsers;
 
-    public SponsersFragment(Context contextEvents) {
+    public SponsersFragment() {
         // Required empty public constructor
-        this.contextEvents = contextEvents;
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        this.contextEvents = getActivity();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_sponsers, container, false);
-        int imgs1[] = {R.drawable.athletics_final, R.drawable.volleyball_final, R.drawable.tennis_final, R.drawable.badminton_final, R.drawable.athletics_final, R.drawable.badminton_final};
+        int imgs1[] = {R.drawable.athletics_final, R.drawable.volleyball_final, R.drawable.tennis_final, R.drawable.badminton_final, R.drawable.athletics_final, R.drawable.badminton_final, R.drawable.athletics_final, R.drawable.athletics_final};
         int imgs2[] = {R.drawable.solid_black};
         gridSponsers = (MyGridView) v.findViewById(R.id.gridSponsers);
         tempGrid = (MyGridView) v.findViewById(R.id.tempGrid);
@@ -55,12 +61,14 @@ public class SponsersFragment extends android.support.v4.app.Fragment {
         if (isNetworkAvailable()) {
             sponsGallery = (SliderLayout) v.findViewById(R.id.sponsGallery);
             url_mapsSponsers = new HashMap<String, String>();
+            url_mapsSponsers.put("Aircel", "http://www.mymobile.co.in/wp-content/uploads/2014/03/Aircel4.jpg");
+            url_mapsSponsers.put("Quicksilver", "http://www.viewlogo.com/wp-content/uploads/2013/08/Quiksilve-Logo.jpg");
+            url_mapsSponsers.put("Kajaria", "http://rajasthanpedia.com/wp-content/uploads/2013/01/Kajaria-Ceramics-Logo.jpg");
             url_mapsSponsers.put("ONGC", "http://www.jobsandresults.com/wp-content/uploads/2013/01/ONGC-logo-1024x1024.jpg");
-            url_mapsSponsers.put("Idea", "http://images.fonearena.com/blog/wp-content/uploads/2011/03/Idea-3G-launch.jpg");
+            url_mapsSponsers.put("Orange tours and travels", "http://img.click.in/classifieds/images/148/26_4_2012_17_01_1178_new_logo1234copy.jpg");
             url_mapsSponsers.put("State Bank of India", "http://kikkidu.com/wp-content/uploads/2011/07/sbi.jpg");
-            url_mapsSponsers.put("Sony", "http://redpilltimes.com/wp-content/uploads/2014/12/Sony-logo.jpg");
-            url_mapsSponsers.put("The Times of India", "http://www.stopgendercide.org/wp-content/uploads/2014/11/Times-of-India-abortion.jpg");
-            url_mapsSponsers.put("Airtel", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZKrYLAcLtqrHqO4s5uyJP1ndVC-ilMB45tx16DPaEFjXyH2jdHA");
+            url_mapsSponsers.put("The Bike Affair", "http://www.thebikeaffair.com/images/logo.jpg");
+            url_mapsSponsers.put("Servo", "http://www.triangletennis.org/passingshot/sep12/images/sep%202012/SERVO%20LOGO.jpg");
 
 
             for (String name : url_mapsSponsers.keySet()) {
@@ -111,7 +119,7 @@ public class SponsersFragment extends android.support.v4.app.Fragment {
         if (isNetworkAvailable()) {
             sponsGallery.stopAutoCycle();
         }
-        Log.d("bbb", "url");
+        //Log.d("bbb", "url");
         textSliderViewSponsers = null;
 
     }
@@ -161,8 +169,8 @@ class ImageAdapter extends BaseAdapter {
         } else {
             holderSpons = (HolderSpons) rowView.getTag();
         }
-        String[] b = {"http://www.jobsandresults.com/wp-content/uploads/2013/01/ONGC-logo-1024x1024.jpg", "http://images.fonearena.com/blog/wp-content/uploads/2011/03/Idea-3G-launch.jpg", "http://kikkidu.com/wp-content/uploads/2011/07/sbi.jpg", "http://redpilltimes.com/wp-content/uploads/2014/12/Sony-logo.jpg", "http://www.stopgendercide.org/wp-content/uploads/2014/11/Times-of-India-abortion.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZKrYLAcLtqrHqO4s5uyJP1ndVC-ilMB45tx16DPaEFjXyH2jdHA"};
-
+        //String[] b = {"http://www.mymobile.co.in/wp-content/uploads/2014/03/Aircel4.jpg", "http://www.jobsandresults.com/wp-content/uploads/2013/01/ONGC-logo-1024x1024.jpg", "http://images.fonearena.com/blog/wp-content/uploads/2011/03/Idea-3G-launch.jpg", "http://kikkidu.com/wp-content/uploads/2011/07/sbi.jpg", "http://redpilltimes.com/wp-content/uploads/2014/12/Sony-logo.jpg", "http://www.stopgendercide.org/wp-content/uploads/2014/11/Times-of-India-abortion.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZKrYLAcLtqrHqO4s5uyJP1ndVC-ilMB45tx16DPaEFjXyH2jdHA"};
+        String[] b = {"http://www.mymobile.co.in/wp-content/uploads/2014/03/Aircel4.jpg", "http://www.viewlogo.com/wp-content/uploads/2013/08/Quiksilve-Logo.jpg", "http://rajasthanpedia.com/wp-content/uploads/2013/01/Kajaria-Ceramics-Logo.jpg", "http://www.jobsandresults.com/wp-content/uploads/2013/01/ONGC-logo-1024x1024.jpg", "http://img.click.in/classifieds/images/148/26_4_2012_17_01_1178_new_logo1234copy.jpg", "http://kikkidu.com/wp-content/uploads/2011/07/sbi.jpg", "http://www.thebikeaffair.com/images/logo.jpg", "http://www.triangletennis.org/passingshot/sep12/images/sep%202012/SERVO%20LOGO.jpg"};
         Picasso.with(context).load(b[position]).fit().into(holderSpons.img);
 
 

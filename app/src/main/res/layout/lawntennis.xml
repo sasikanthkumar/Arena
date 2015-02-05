@@ -1,86 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
 
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TextView
+        android:id="@+id/rulesLawnTennis"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:background="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="14dp"
+        android:paddingTop="13dp"
+        android:text="Rules"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/rulesLawnTennis1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesLawnTennisText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesLawnTennisText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Team Event. A minimum of 2 and maximum of 4 players in a team.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesLawnTennis2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesLawnTennisText2"
+            android:layout_below="@+id/rulesLawnTennisText1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesLawnTennisText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesLawnTennisText1"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Davis Cup format – 2 singles matches and a decider doubles match in case of a draw.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesLawnTennis3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesLawnTennisText3"
+            android:layout_below="@+id/rulesLawnTennisText2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesLawnTennisText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesLawnTennisText2"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Group Stage – 1 set for each singles and doubles. Top 2 teams from each group qualify. The number of groups will be decided based on the number of teams participating. The semis and finals will be a best of 15 (8 games to win) or 17 (9 games to win) games.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesLawnTennis4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesLawnTennisText4"
+            android:layout_below="@+id/rulesLawnTennisText3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesLawnTennisText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesLawnTennisText3"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="Player match-ups - Player 1 and Player 2 from one team will play the corresponding Player 1 and Player 2 from the opponents' side. (Before each match the teams can decide who their two players will be). The teams can decide their doubles players after the two singles matches get over.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rulesLawnTennis5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rulesLawnTennisText5"
+            android:layout_below="@+id/rulesLawnTennisText4"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="&#9830;"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rulesLawnTennisText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesLawnTennisText4"
+            android:fontFamily="serif"
+            android:paddingLeft="24dp"
+            android:paddingRight="5dp"
+            android:text="If two teams have the same number of wins, the one with higher number of singles match wins will be placed higher in the group. Further clashes, if any, will be decided by the difference between games won and lost.\n"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
         android:orientation="vertical">
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:textColor="@android:color/black"
-            android:padding="5dp"
-            android:text="MEN'S and WOMEN'S -:"
-            android:textAppearance="@android:style/TextAppearance.Large"
-            tools:ignore="HardcodedText" />
-
-        <TextView
-            android:textColor="@android:color/black"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:text="@string/rules"
-            android:textAppearance="@android:style/TextAppearance.Large"
-            tools:ignore="HardcodedText" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="5dp"
-            android:textColor="@android:color/black"
-
-            android:text="1) Team Event. A minimum of 2 and maximum of 4 players in a team.\n2) Davis Cup format – 2 singles matches and a decider doubles match in case of a draw.\n3) Group Stage – 1 set for each singles and doubles. Top 2 teams from each group qualify. The number of groups will be decided based on the number of teams participating. The semis and finals will be a best of 15 (8 games to win) or 17 (9 games to win) games.\n4) Player match-ups - Player 1 and Player 2 from one team will play the corresponding Player 1 and Player 2 from the opponents' side. (Before each match the teams can decide who their two players will be). The teams can decide their doubles players after the two singles matches get over.\n5) If two teams have the same number of wins, the one with higher number of singles match wins will be placed higher in the group. Further clashes, if any, will be decided by the difference between games won and lost.\n"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            tools:ignore="HardcodedText" />
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:background="#E6E6E6" />
 
         <TextView
             android:id="@+id/eventManagers9"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="10dp"
+
             android:text="Event Managers"
 
-            android:textAppearance="@android:style/TextAppearance.Large"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/vishal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_below="@+id/eventManagers9"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:paddingTop="10dp"
-            android:text="Vishal Athreya"
 
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColor="@android:color/black" />
+            android:text="Vishal Athreya"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:id="@+id/vishalPhn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rishab"
             android:autoLink="phone"
-            android:paddingBottom="20dp"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingBottom="10dp"
             android:text="+91-9542592406"
+
             android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textColorLink="@android:color/holo_blue_dark" />
-
-
+            android:textColorLink="@android:color/white" />
     </LinearLayout>
+</LinearLayout>
 
